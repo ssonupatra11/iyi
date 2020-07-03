@@ -116,6 +116,10 @@ h1 {
     width: 40px;
 }
 
+.icon_div {
+    background-color: rgb(221, 221, 221);
+}
+
 #id1 {
     color: white;
     height: 200px;
