@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is an Educational website based on iot,5g,machineLearning,artificial intelligence,iot modules">
+    <meta name="keywords" content="iot,ml,python,ai,iot modules,5g,machineLearning,artificial intelligence">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="S.Sonu Patra">
+    <link rel="stylesheet" href="css_design1.css">
+    <link rel="stylesheet" href="css_design2.css">
+    <link rel="stylesheet" href="collapsible.css">
+</head>
+
+<body>
+    <div>
+        <table id="header">
+            <tr>
+                <th>
+                    <h1>MICROCONTROLLERS AND DEVELOPMENT BOARDS</h1>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <div class="topnav" id="myTopnav">
+                        <a href="index.html">Home</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">Modules
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="commutools.html">
+                                    <div align="left" class="font"><img src="1 (12).png" class="short">COMMUNICATION TOOLS
+                                    </div>
+                                </a>
+                                <a href="drone.html">
+                                    <div align="left" class="font"><img src="1 (5).png" class="short">DRONE COMPONENTS</div>
+                                </a>
+                                <a href="iot.html">
+                                    <div align="left" class="font"><img src="1 (2).png" class="short">IOT MODULES</div>
+                                </a>
+                                <a href="boards.html">
+                                    <div align="left" class="font"><img src="1 (1).png" class="short">MICROCONTROLLERS</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Books
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="python.html">
+                                    <div align="left" class="font"><img src="1 (11).png" class="short">PYTHON</div>
+                                </a>
+                                <a href="ml.html">
+                                    <div align="left" class="font"><img src="1 (3).png" class="short">ML</div>
+                                </a>
+                                <a href="firebase.html">
+                                    <div align="left" class="font"><img src="1 (9).png" class="short">FIREBASE</div>
+                                </a>
+                                <a href="iotbook.html">
+                                    <div align="left" class="font"><img src="1 (7).png" class="short">IOT</div>
+                                </a>
+                                <a href="drones.html">
+                                    <div align="left" class="font"><img src="1 (10).png" class="short">DRONE</div>
+                                </a>
+                                <a href="ai.html">
+                                    <div align="left" class="font"><img src="1 (8).png" class="short">AI</div>
+                                </a>
+                                <a href="5g.html">
+                                    <div align="left" class="font"><img src="1 (6).png" class="short">5G IOT</div>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="about.html">About</a>
+                        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                    </div>
+                </th>
+            </tr>
+        </table>
+    </div>
+    <div class="grid-container">
+        <div class="item"><button class="effe" id="myBtn"><img class="image" src="Adafruit-Flora.jpg"></button><br>Adafruit Flora
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="flora_pinout.png" class="collapsible_image" alt="image is here"><br>
+                    <button class="collapsible">
+                    <h4>Descriptions:</h4>
+                </button>
+                    <div class="content">
+                        <h5>FLORA is Adafruit's wearable electronics platform. We designed it from the ground up to provide the best experience for Adafruit's community of makers, hackers, crafters, artists, designers and engineers.<br>It's built around the
+                            Atmega32u4 chip, which has built-in USB support. No pesky special cables or extra parts for programming, just plug it in and get started making the wearables project of your dreams! Works on Windows and Mac.<br> New! As of
+                            May 12th, 2015, we're now selling the Flora v2! The Flora v2 now comes with a micro-USB port instead of a mini-USB port and a programmable NeoPixel installed (it's connected to Digital 8, ready for your blinky commands)<br>                            The FLORA is extremely beginner-friendly-- it is difficult to destroy the FLORA by connecting a battery backwards due to polarized connector and protection diodes.<br>The onboard regulator means that even connecting a 9V battery
+                            will not result in damage or tears.<br> Adafruit created the FLORA from scratch after many months of research and we really think we came up with something that will empower some amazing wearable projects.<br><br> The FLORA
+                            is small (1.75" diameter). We wanted the smallest possible board for our wearable platform. It's based on our experiences shipping our own, shipping, customer-tested Atmega32u4 Breakout Board.<br> FLORA has a small but easy
+                            to use onboard reset button to reboot the system. The power supply is deigned to be flexible and easy to use.<br>There is an onboard polarized 2 JST battery connector with protection schottky diode for use with external battery
+                            packs from 3.5v to 9v DC in (It can run on 3V but 3.5V-5V or higher is ideal). Can be used with LiIon/LiPoly, LiFe, alkaline or rechargeable NiMh/NiCad batteries of any size.<br> The FLORA does not have a LiPo charger included
+                            by design, this allows safe use with multiple battery types and reduces risk of fire as it is not recommended to charge these batteries on fabric.<br> FLORA has built-in USB support. Built in USB means you plug it in to program
+                            it, it just shows up. No additional purchases are needed! Works with Mac, Windows, Linux, any USB cable works great.<br>Currently the PCB comes with a mini B connector but future versions may change to microUSB.
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>FLORA pinout diagram:</h4>
+                </button>
+                    <div class="content">
+                        <h5>For handy reference, we've created this pinout diagram illustrating all the alternate functions for each of the pins on the Flora.<br> The most commonly confused part of the Flora is the VBATT pad and how power management is handled
+                            in the Flora. We designed the flora to be mainly powered via the JST connector.<br> You can power it with a battery pack or lipo battery. That input is polarity protected and also controlled via the on/off switch. The battery
+                            output after the switch is VBATT. You shouldn't use VBATT as an input as you might damage your battery if you also plug in the USB connector to a computer!
+                            <br>The ideal use of VBATT is when you want to power something like NeoPixels or a servo, something that requires more than the 150mA available from the onboard regulator.
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>What about SPI?:</h4>
+                </button>
+                    <div class="content">
+                        <h5>The Flora also supports hardware SPI. The SPI pins are on the 2x3 header near the center of the Flora. A small white dot indicates pin 1. The SPI header pinout is shown here:
+                            <img src="flora_ICSP_pinout.png" class="collapsible_image" alt="image is here">
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Technical Specifications:</h4>
+                </button>
+                    <div class="content">
+                        <h5>
+                            <ul>
+                                <li>Battery input (JST): 3.5-16V (the regulator is MIC5225-3.3) with reverse polarity protection, 2A max rated connector. We recommend no more than 6VDC so that the 3.3V regulator does not overheat</li>
+                                <li>USB input: 4.5V-5.5V with 500mA fuse</li>
+                                <li>3.3V output pad: we recommend no more than 100mA, as the regulator can supply 150mA and the Flora Mainboard uses 20mA. but you can probably draw up to 250mA in spikes.</li>
+                                <li>Clock speed: 8MHz</li>
+                                <img src="florasch (1).png" class="collapsible_image" alt="image is here"><br>
+                                <li>Chipset: ATmega32u4</li>
+                                <li>VBAT output pad: the higher of the VBAT JST input voltage and USB voltage (two schottkey diode connection)</li>
+                                <li>Current Draw: 8mA quiescent, another 2mA when the pin #D7 LED is on.</li>
+                            </ul>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item"><button class="effe" id="myBtn1"><img class="image" src="Arduino-Uno.jpeg"></button><br>Arduino Uno
+            <div id="myModal1" class="modal">
+                <div class="modal-content">
+                    <span class="close1">&times;</span>
+                    <img src="arduinouno.png" class="collapsible_image" alt="image is here"><br>
+                    <button class="collapsible">
+                        <h4>Descriptions:</h4>
+                    </button>
+                    <div class="content">
+                        <h5>The UNO is the best board to get started with electronics and coding. If this is your first experience tinkering with the platform, the UNO is the most robust board you can start playing with. The UNO is the most used and documented
+                            board of the whole Arduino family.<br>Arduino Uno is a microcontroller board based on the ATmega328P (datasheet). It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz quartz
+                            crystal, a USB connection, a power jack, an ICSP header and a reset button.<br>It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter
+                            or battery to get started.. <br>You can tinker with your UNO without worring too much about doing something wrong, worst case scenario you can replace the chip for a few dollars and start over again. <br>"Uno" means one in
+                            Italian and was chosen to mark the release of Arduino Software (IDE) 1.0. The Uno board and version 1.0 of Arduino Software (IDE) were the reference versions of Arduino, now evolved to newer releases. <br>The Uno board is the
+                            first in a series of USB Arduino boards, and the reference model for the Arduino platform; for an extensive list of current, past or outdated boards see the Arduino index of boards.
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                        <h4>Pinout Description:</h4>
+                    </button>
+                    <div class="content">
+                        <h5>Power USB:-<br> Arduino board can be powered by using the USB cable from your computer. All you need to do is connect the USB cable to the USB connection.<br><br> Power (Barrel Jack):-<br> Arduino boards can be powered directly
+                            from the AC mains power supply by connecting it to the Barrel Jack.<br><br> Voltage Regulator:-<br> The function of the voltage regulator is to control the voltage given to the Arduino board and stabilize the DC voltages used
+                            by the processor and other elements.<br><br> Crystal Oscillator:-<br> The crystal oscillator helps Arduino in dealing with time issues. How does Arduino calculate time? The answer is, by using the crystal oscillator. The number
+                            printed on top of the Arduino crystal is 16.000H9H. It tells us that the frequency is 16,000,000 Hertz or 16 MHz.<br><br> Arduino Reset:-<br> You can reset your Arduino board, i.e., start your program from the beginning. You
+                            can reset the UNO board in two ways. First, by using the reset button on the board. Second, you can connect an external reset button to the Arduino pin labelled RESET.<br><br> Pins (3.3, 5, GND, Vin):-<br> 3.3V (6) − Supply
+                            3.3 output volt<br> 5V (7) − Supply 5 output volt<br> Most of the components used with Arduino board works fine with 3.3 volt and 5 volt.<br> GND (8)(Ground) − There are several GND pins on the Arduino, any of which can be
+                            used to ground your circuit.<br> Vin (9) − This pin also can be used to power the Arduino board from an external power source, like AC mains power supply.<br><br> Analog pins:-<br> The Arduino UNO board has six analog input
+                            pins A0 through A5. These pins can read the signal from an analog sensor like the humidity sensor or temperature sensor and convert it into a digital value that can be read by the microprocessor.<br> Main microcontroller:-<br>                            Each Arduino board has its own microcontroller (11). You can assume it as the brain of your board. The main IC (integrated circuit) on the Arduino is slightly different from board to board. The microcontrollers are usually
+                            of the ATMEL Company. You must know what IC your board has before loading up a new program from the Arduino IDE. This information is available on the top of the IC. For more details about the IC construction and functions,
+                            you can refer to the data sheet.<br><br> ICSP pin:-<br> Mostly, ICSP (12) is an AVR, a tiny programming header for the Arduino consisting of MOSI, MISO, SCK, RESET, VCC, and GND. It is often referred to as an SPI (Serial Peripheral
+                            Interface), which could be considered as an "expansion" of the output. Actually, you are slaving the output device to the master of the SPI bus.<br><br> Power LED indicator:-<br> This LED should light up when you plug your
+                            Arduino into a power source to indicate that your board is powered up correctly. If this light does not turn on, then there is something wrong with the connection.<br><br> TX and RX LEDs:-<br> On your board, you will find two
+                            labels: TX (transmit) and RX (receive). They appear in two places on the Arduino UNO board. First, at the digital pins 0 and 1, to indicate the pins responsible for serial communication. Second, the TX and RX led (13). The
+                            TX led flashes with different speed while sending the serial data. The speed of flashing depends on the baud rate used by the board. RX flashes during the receiving process.<br><br> Digital I/O:-<br> The Arduino UNO board has
+                            14 digital I/O pins (15) (of which 6 provide PWM (Pulse Width Modulation) output. These pins can be configured to work as input digital pins to read logic values (0 or 1) or as digital output pins to drive different modules
+                            like LEDs, relays, etc. The pins labeled “~” can be used to generate PWM.<br><br>
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                        <h4>Structure:</h4>
+                    </button>
+                    <div class="content">
+                        <h5>Arduino programs can be divided in three main parts: Structure, Values (variables and constants), and Functions. In this tutorial, we will learn about the Arduino software program, step by step, and how we can write the program
+                            without any syntax or compilation error.<br> Let us start with the Structure. Software structure consist of two main functions −<br> Setup( ) function<br> Loop( ) function<br><br> Structure:-
+                            <br> Void setup ( ) {<br>
+                            <br> }
+                            <br>
+                            <br> PURPOSE:− <br>The setup() function is called when a sketch starts. Use it to initialize the variables, pin modes, start using libraries, etc. The setup function will only run once, after each power up or reset of the Arduino
+                            board.
+                            <br><br> Structure:-
+                            <br> Void Loop ( ) {<br>
+                            <br> }
+                            <br><br> PURPOSE:−
+                            <br> After creating a setup() function, which initializes and sets the initial values, the loop() function does precisely what its name suggests, and loops consecutively, allowing your program to change and respond. Use it
+                            to actively control the Arduino board.<br><br> Data types:-<br> in C refers to an extensive system used for declaring variables or functions of different types. The type of a variable determines how much space it occupies in
+                            the storage and how the bit pattern stored is interpreted.<br> The following table provides all the data types that you will use during Arduino programming.<br>
+                            <table>
+                                <tr>
+                                    <th>void</th>
+                                    <th>Boolean</th>
+                                    <th>char</th>
+                                    <th>Unsigned char</th>
+                                    <th>byte</th>
+                                    <th>int</th>
+                                    <th>Unsigned int</th>
+                                    <th>word</th>
+                                </tr>
+                                <tr>
+                                    <th>long</th>
+                                    <th>Unsigned long</th>
+                                    <th>short</th>
+                                    <th>float</th>
+                                    <th>double</th>
+                                    <th>array</th>
+                                    <th>String-char array</th>
+                                    <th>String-object</th>
+                                </tr>
+                            </table><br><br> void:-
+                            <br> The void keyword is used only in function declarations. It indicates that the function is expected to return no information to the function from which it was called.<br> Example:-
+                            <br> Void Loop ( ) {<br> // rest of the code<br> }
+                            <br><br> Boolean:-
+                            <br> A Boolean holds one of two values, true or false. Each Boolean variable occupies one byte of memory.<br> Example:-
+                            <br> boolean val = false ; // declaration of variable with type boolean and initialize it with false<br> boolean state = true ; // declaration of variable with type boolean and initialize it with true<br><br> Char:-
+                            <br> A data type that takes up one byte of memory that stores a character value. Character literals are written in single quotes like this: 'A' and for multiple characters, strings use double quotes: "ABC".<br> However, characters
+                            are stored as numbers. You can see the specific encoding in the ASCII chart. This means that it is possible to do arithmetic operations on characters, in which the ASCII value of the character is used. For example, 'A' + 1
+                            has the value 66, since the ASCII value of the capital letter A is 65.<br> Example:-
+                            <br> Char chr_a = ‘a’ ;//declaration of variable with type char and initialize it with character a<br> Char chr_c = 97 ;//declaration of variable with type char and initialize it with character 97<br><br><br> unsigned char:-
+                            <br<br> Unsigned char is an unsigned data type that occupies one byte of memory. The unsigned char data type encodes numbers from 0 to 255.<br> Example:-
+                                <br> Unsigned Char chr_y = 121 ; // declaration of variable with type Unsigned char and initialize it with character y<br><br> byte:-
+                                <br> A byte stores an 8-bit unsigned number, from 0 to 255.<br> Example:-
+                                <br> byte m = 25 ;//declaration of variable with type byte and initialize it with 25<br><br> int:-
+                                <br> Integers are the primary data-type for number storage. int stores a 16-bit (2-byte) value. This yields a range of -32,768 to 32,767 (minimum value of -2^15 and a maximum value of (2^15) - 1).<br> The int size varies
+                                from board to board. On the Arduino Due, for example, an int stores a 32-bit (4-byte) value. This yields a range of -2,147,483,648 to 2,147,483,647 (minimum value of -2^31 and a maximum value of (2^31) - 1).<br> Example:-
+                                <br> int counter = 32 ;// declaration of variable with type int and initialize it with 32<br><br> Unsigned int:-<br> Unsigned ints (unsigned integers) are the same as int in the way that they store a 2 byte value. Instead
+                                of storing negative numbers, however, they only store positive values, yielding a useful range of 0 to 65,535 (2^16) - 1). The Due stores a 4 byte (32-bit) value, ranging from 0 to 4,294,967,295 (2^32 - 1).<br> Example:-
+                                <br> Unsigned int counter = 60 ; // declaration of variable with type unsigned int and initialize it with 60<br><br> Word:-
+                                <br> On the Uno and other ATMEGA based boards, a word stores a 16-bit unsigned number. On the Due and Zero, it stores a 32-bit unsigned number.<br> Example:-
+                                <br> word w = 1000 ;//declaration of variable with type word and initialize it with 1000<br><br> Long:-
+                                <br> Long variables are extended size variables for number storage, and store 32 bits (4 bytes), from -2,147,483,648 to 2,147,483,647.<br> Example:-
+                                <br> Long velocity = 102346 ;//declaration of variable with type Long and initialize it with 102346<br><br> unsigned long:-<br> Unsigned long variables are extended size variables for number storage and store 32 bits (4
+                                bytes). Unlike standard longs, unsigned longs will not store negative numbers, making their range from 0 to 4,294,967,295 (2^32 - 1).<br> Example:-
+                                <br> Unsigned Long velocity = 101006 ;// declaration of variable with type Unsigned Long and initialize it with 101006<br><br> short:-
+                                <br> A short is a 16-bit data-type. On all Arduinos (ATMega and ARM based), a short stores a 16-bit (2-byte) value. This yields a range of -32,768 to 32,767 (minimum value of -2^15 and a maximum value of (2^15) - 1).<br>                                Example:-
+                                <br> short val = 13 ;//declaration of variable with type short and initialize it with 13<br><br> float:-
+                                <br> Data type for floating-point number is a number that has a decimal point. Floating-point numbers are often used to approximate the analog and continuous values because they have greater resolution than integers.<br>                                Floating-point numbers can be as large as 3.4028235E+38 and as low as -3.4028235E+38. They are stored as 32 bits (4 bytes) of information.<br> Example:-
+                                <br> float num = 1.352;//declaration of variable with type float and initialize it with 1.352<br><br> double:-
+                                <br> On the Uno and other ATMEGA based boards, Double precision floating-point number occupies four bytes. That is, the double implementation is exactly the same as the float, with no gain in precision. On the Arduino Due,
+                                doubles have 8-byte (64 bit) precision.<br> Example:-
+                                <br> double num = 45.352 ;// declaration of variable with type double and initialize it with 45
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                        <h4>Technical Specifications:</h4>
+                    </button>
+                    <div class="content">
+                        <h5>Microcontroller------------ATmega328P – 8 bit AVR family microcontroller<br> Operating Voltage------------5V<br> Recommended Input Voltage------------7-12V<br> Input Voltage Limits------------6-20V<br> Analog Input Pins------------6
+                            (A0 – A5)<br> Digital I/O Pins------------14 (Out of which 6 provide PWM output)<br> DC Current on I/O Pins------------40 mA<br> DC Current on 3.3V Pin------------50 mA<br> Flash Memory------------32 KB (0.5 KB is used for
+                            Bootloader)
+                            <br> SRAM------------2 KB<br> EEPROM------------1 KB<br> Frequency (Clock Speed)------------16 MHz
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                        <h4>Communication:</h4>
+                    </button>
+                    <div class="content">
+                        <h5>Arduino can be used to communicate with a computer, another Arduino board or other microcontrollers. The ATmega328P microcontroller provides UART TTL (5V) serial communication which can be done using digital pin 0 (Rx) and digital
+                            pin 1 (Tx).<br>An ATmega16U2 on the board channels this serial communication over USB and appears as a virtual com port to software on the computer. The ATmega16U2 firmware uses the standard USB COM drivers, and no external
+                            driver is needed.<br>However, on Windows, a .inf file is required. The Arduino software includes a serial monitor which allows simple textual data to be sent to and from the Arduino board. There are two RX and TX LEDs on the
+                            arduino board which will flash when data is being transmitted via the USB-to-serial chip and USB connection to the computer (not for serial communication on pins 0 and 1).<br>A SoftwareSerial library allows for serial communication
+                            on any of the Uno's digital pins. The ATmega328P also supports I2C (TWI) and SPI communication. The Arduino software includes a Wire library to simplify use of the I2C bus.
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                        <h4>Programming Arduino:</h4>
+                    </button>
+                    <div class="content">
+                        <h5>Once arduino IDE is installed on the computer, connect the board with computer using USB cable. Now open the arduino IDE and choose the correct board by selecting Tools>Boards>Arduino/Genuino Uno, and choose the correct Port by
+                            selecting Tools>Port.<br>Arduino Uno is programmed using Arduino programming language based on Wiring. To get it started with Arduino Uno board and blink the built-in LED, load the example code by selecting Files>Examples>Basics>Blink.<br>Once
+                            the example code (also shown below) is loaded into your IDE, click on the ‘upload’ button given on the top bar. Once the upload is finished, you should see the Arduino’s built-in LED blinking. Below is the example code for
+                            blinking:
+                            <br><br> // the setup function runs once when you press reset or power the board<br> void setup() {<br> // initialize digital pin LED_BUILTIN as an output.<br> pinMode(LED_BUILTIN, OUTPUT);<br> }
+                            <br> // the loop function runs over and over again forever<br> void loop() {<br> digitalWrite(LED_BUILTIN, HIGH); // turn the LED on (HIGH is the voltage level)<br> delay(1000); // wait for a second<br> digitalWrite(LED_BUILTIN,
+                            LOW); // turn the LED off by making the voltage LOW<br> delay(1000); // wait for a second<br> }
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                        <h4>Applications:</h4>
+                    </button>
+                    <div class="content">
+                        <h5>1.Prototyping of Electronics Products and Systems.<br> 2.Multiple DIY Projects.<br> 3.Easy to use for beginner level DIYers and makers.<br> 4.Projects requiring Multiple I/O interfaces and communications.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item"><button class="effe" id="myBtn2"><img class="image" src="Intel-Edison.png"></button><br>Intel-Edison
+            <div id="myModal2" class="modal">
+                <div class="modal-content">
+                    <span class="close2">&times;</span>
+                    <img src="EdisonKitArduino.png" class="collapsible_image" alt="image is here"><br>
+                    <button class="collapsible">
+                    <h4>Descriptions:</h4>
+                </button>
+                    <div class="content">
+                        <h5>The Intel® Edison module is a SoC (System on Chip) that includes an Intel® Atom™ 500MHz dual-core, dual-threaded CPU and an Intel® Quark™ 100MHz microcontroller.
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Features:</h4>
+                </button>
+                    <div class="content">
+                        <h5>
+                            <ul>
+                                <li>Integrated Wi-Fi, Bluetooth 4.0 LE</li>
+                                <li>Support for Yocto Linux, Python, Node.js and Wolfram</li>
+                            </ul>
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Pin Description:</h4>
+                </button>
+                    <div class="content">
+                        <h5>Intel® Edison Kit for Arduino provides the Arduino 1.0 pinout and standard connectors such as a micro USB connected to a UART, a USB OTG port that can be switched between a second micro USB device connector, a standard size USB
+                            host Type-A connector, a uSD card holder, and a DC power jack.<br> Like an Arduino Uno, the Intel® Edison Kit for Arduino makes possible to have provides 20 digital input/output pins, of which 6 can be used as analog inputs.<br>The
+                            Intel® Edison has 4 PWM outputs which can be configured via jumpers to any of the 6 pins supporting PWM on the Arduino Uno (pins 3, 5, 6, 9, 10, or 11).<br> The Intel® Edison Kit for Arduino is designed to be hardware and software
+                            pin-compatible with Arduino shields designed for the Arduino Uno R3.<br>Digital pins 0 to 13 (and the adjacent AREF and GND pins), Analog inputs 0 to 5, the power header, ICSP header, and the UART port pins (0 and 1), are all
+                            in the same locations as on the Arduino Uno R3.<br> The digital IOs and analog pins can be configured to operate at either 5V or 3.3V. The outputs can source or sink 24 mA at 3.3V and 32 mA at 5V.
+                        </h5>
+                    </div>
+                    <img src="Intel_Edison_Mini_Front_450px.jpg" class="collapsible_image" alt="image is here"><br>
+                    <button class="collapsible">
+                    <h4>Technical Specifications:</h4>
+                </button>
+                    <div class="content">
+                        <h5>SoC---Dual-core, dual-threaded Intel® Atom™ CPU and a 32-bit Intel® Quark™ microcontroller<br> Operating Voltage---1.8V (Breakouk Board)<br> Input Voltage---7-15V (Both Breakout Board and Kit for Arduino<br> Digital I/O Pins---20
+                            (of which 6 provide analog input and 4 provide PWM output) (Kit for Arduino)<br> Flash Storage---4 GB eMMC<br> RAM---1 GB LPDDR3 POP<br> Clock Speed---500 MHz (Intel® Atom™ CPU)<br> 100 MHz (Quark™ microcontroller)<br> Length---35.5mm
+                            (Edison)
+                            <br> 61mm (Breakout Board)<br> 127mm (Kit for Arduino)<br> Width---25mm (Edison)<br> 29mm (Breakout Board)<br> 72mm (Kit for Arduino)<br> Height---4mm (Edison)<br> 12mm (Breakout Board)<br> 12mm (Kit for Arduino)
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                        <h4>Jumpers:</h4>
+                    </button>
+                    <div class="content">
+                        <img src="BreakoutJumpers1.png" class="collapsible_image" alt="image is here"><br>
+                        <h5>J2 is the battery connector. If you want to power the breakout board with a rechargeable lithium-ion battery, attach it to J2.<br>(Refer to the figure for battery polarity.) When you attach a rechargeable lithium-ion battery, the
+                            breakout board will recharge the battery whenever power is applied via J21 or J22, or via J3 (when the board is attached to a USB host).<br>Note that If you decide to use a battery pack on J2, we recommend a battery with a
+                            built-in thermistor. This thermistor should attach to the charger on the breakout board. <br>If you opt for the built-in thermistor, remove the jumper on J1 and connect the thermistor to the pin labeled THERM in the figure.
+                            If you choose not to use a battery with built-in thermistor, leave the jumper in place.)<br><br> J3 is a micro USB FTDI serial-to-USB converter. The Linux console will output serial stream to this USB connector.
+                            <br><br> J16 is a fully USB compatible, micro AB, OTG (power “on the go”) port. If you plug a micro A cable into this port, the Intel® Edison module will connect to a PC as the host;<br>if you plug a micro B cable into this
+                            port, the Intel® Edison module will connect to the PC as a device.<br><br> For jumpers J17 through J20, the first pin on the left (the square one) is pin 1.<br> J21 is the main power input. Apply 7 to 15 VDC with the polarity
+                            shown.
+                            <br> J22 (on the bottom side of the board; see Figure 3) is for a power jack (not installed).<br>You can purchase a 2.5 mm barrel jack and solder it to the bottom side of the board as shown in Figure 3. The input voltage to
+                            J22 is also 7 to 15 VDC.<br><br> J1 is the main power input. Apply 7 to 15 VDC with the positive center.<br> J2 is the battery connector. If you want to power the breakout board with a rechargeable lithium-ion battery,<br>                            attach it to J2. (Refer to the silk for battery polarity.) When you attach a rechargeable lithium-ion battery, the Kit for Arduino will recharge the battery whenever power is applied via J3 or J16, or via J1 (when the board
+                            is attached to a USB host).<br><br> J11 & J12. There are four available GPIO that can be configured as PWM outputs This pin header arrangement allows the four PWM sources to be routed to any four of the six Arduino header pins.
+                            Figure 3 shows the PWM swizzler. Moving the PWM jumpers from the default configuration makes an I/O pin unavailable for use.<br><br> J16 is a fully USB compatible, micro AB, OTG (power “on the go”) port. If you plug a micro
+                            A cable into this port, the Intel® Edison module will connect to a PC as the host; if you plug a micro B cable into this port, the Intel® Edison module will connect to the PC as a device.
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                        <h4>Power:</h4>
+                    </button>
+                    <div class="content">
+                        <h5>The Intel® Edison is a low-power device. In general, it does not draw more than 200 mA with 600 mA short duration spikes during Wi-Fi transmit.<br>Therefore, an Intel® Edison device may run on USB power (when configured as a device),
+                            or an external power adapter from 7 to 15 V. Power from the external power adapter goes to a DC-DC converter and down-converted to 5 V. <br>This power goes to a battery recharger IC, which limits the output voltage to 4.4 V.
+                            This voltage is in the safe range for the Edison module VSYS. <br><br>The VSYS power range is 3.15 to 4.5 V. This allows the Intel® Edison device to run off a standard lithium-ion battery. Intel® Edison Breakout Board The on-boardcharger
+                            IC is configured to limit the current to 1 A. <br>The charger is programmed to charge at 190 mA. This charger is designed to charge standard lithium-ion batteries with 4.2 V maximum charging voltage. You are responsible for
+                            choosing a suitable battery and following all safety precautions, to prevent overcharging or charging when the battery temperature is too high. <br><br>The drawback to this design is that the linear supply power drop places
+                            a limit on the total power through the Intel® Edison board and the 3.3 and 1.8 V supplies. <br>The power loss through the charger will be (4.4 to 5 V) times current. In this case, you should attempt to limit average current
+                            through the Intel® Edison board and its power rails to approximately 0.75 A. <br>The recharger IC on the Intel® Edison breakout board has input current limit and overtemperature shutdown. Assure the end design does not trip
+                            these protection mechanisms. Some considerations of the power distribution in the Intel® Edison breakout board: USB host mode always requires use of an external power adapter. <br><br>You are responsible for choosing a suitable
+                            battery and following all safety precautions, to prevent overcharging or charging when the battery temperature is too high. <br>The battery should be at least 300 mAH capacity, due to the 100 mA charging current. Intel recommends
+                            battery packs with internal protection circuits The onboard charger IC is configured to detect the input power source and to limit the input power to either 500 mA (if connected to USB micro B port) or up to 1 A if connected
+                            to the DC power jack.<br>The charger is programmed to charge at 100 mA. This charger is designed to charge standard lithium ion batteries with 4.2 V maximum charging voltage. <br>End-users are responsible for choosing a suitable
+                            battery and following all safety precautions, to assure overcharging or charging when the battery temperature is too high is avoided. For low power applications (those shields running off 3.3 V) a lithium ion battery (3.0 to
+                            4.3 Vmax) can be attached to J2, which will power the Intel® Edison kit for Arduino and provide 100 mA of 3.3 V to the shield.<br><br> Some considerations of the power distribution in the Intel® Edison kit for Arduino: Due
+                            to the diode ORing of the 5 V DC/DC and the VBUS input, means the 5 V power to the shield header will be nominally below 5 V. In the case of VBUS the voltage may be as low as 4.4 V (4.75 V VBUS min – 0.3 V diode drop.<br> In
+                            the case of external power adapter 4.7 V. USB host mode always requires use of an external power adapter. The power pins are as follows:<br><br> VIN:<br> The input voltage to the Intel board. You can access the voltage supplied
+                            via the power jack through this pin. <br>5V:<br> This pin outputs a regulated 5V from the regulator on the board.<br> 3.3V:<br> A 3.3 volt supply generated by the on-board regulator. This regulator also provides the power supply
+                            to the Quark microcontroller.<br> GND:<br> Ground pins.<br> IOREF:<br> This pin on the Arduino board provides the voltage reference with which the microcontroller operates. This can be 3.3V or 5V based on the IOREF jumper position.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item"><button class="effe" id="myBtn3"><img class="image" src="arduino-nano.jpg"></button><br>Arduino-Nano
+            <div id="myModal3" class="modal">
+                <div class="modal-content">
+                    <span class="close3">&times;</span>
+                    <img src="Arduino-Nano-Pinout.png" class="collapsible_image" alt="image is here"><br>
+                    <button class="collapsible">
+                    <h4>Descriptions:</h4>
+                </button>
+                    <div class="content">
+                        <h5>The Arduino Nano is a small, complete, and breadboard-friendly board based on the ATmega328P (Arduino Nano 3.x). It has more or less the same functionality of the Arduino Duemilanove, but in a different package.<br>It lacks only
+                            a DC power jack, and works with a Mini-B USB cable instead of a standard one. The Arduino Nano is a compact board similar to the UNO.
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Pin Configuration:</h4>
+                </button>
+                    <div class="content">
+                        <h5>
+                            <table border="2" class="collapsible_image">
+                                <tr>
+                                    <th>Pin Category</th>
+                                    <th>Pin Name</th>
+                                    <th>Details</th>
+                                </tr>
+                                <tr>
+                                    <th>Power</th>
+                                    <th>Vin, 3.3V, 5V, GND</th>
+                                    <th>Vin: Input voltage to Arduino when using an external power source (6-12V).<br>5V: Regulated power supply used to power microcontroller and other components on the board.<br>3.3V: 3.3V supply generated by on-board voltage
+                                        regulator. Maximum current draw is 50mA.<br>GND: Ground pins.</th>
+                                </tr>
+                                <tr>
+                                    <th>Reset</th>
+                                    <th>Reset</th>
+                                    <th>Resets the microcontroller.</th>
+                                </tr>
+                                <tr>
+                                    <th>Analog Pins</th>
+                                    <th>A0 – A7</th>
+                                    <th>Used to measure analog voltage in the range of 0-5V</th>
+                                </tr>
+                                <tr>
+                                    <th>Input/Output Pins</th>
+                                    <th>Digital Pins D0 - D13</th>
+                                    <th>Can be used as input or output pins. 0V (low) and 5V (high)</th>
+                                </tr>
+                                <tr>
+                                    <th>Serial</th>
+                                    <th>Rx, Tx</th>
+                                    <th>Used to receive and transmit TTL serial data.</th>
+                                </tr>
+                                <tr>
+                                    <th>External Interrupts</th>
+                                    <th>2, 3</th>
+                                    <th>To trigger an interrupt.</th>
+                                </tr>
+                                <tr>
+                                    <th>PWM</th>
+                                    <th>3, 5, 6, 9, 11</th>
+                                    <th>Provides 8-bit PWM output.</th>
+                                </tr>
+                                <tr>
+                                    <th>SPI</th>
+                                    <th>10 (SS), 11 (MOSI), 12 (MISO) and 13 (SCK)</th>
+                                    <th>Used for SPI communication.</th>
+                                </tr>
+                                <tr>
+                                    <th>Inbuilt LED</th>
+                                    <th>13</th>
+                                    <th>To turn on the inbuilt LED.</th>
+                                </tr>
+                                <tr>
+                                    <th>IIC</th>
+                                    <th>A4 (SDA), A5 (SCA)</th>
+                                    <th>Used for TWI communication.</th>
+                                </tr>
+                                <tr>
+                                    <th>AREF</th>
+                                    <th>AREF</th>
+                                    <th>To provide reference voltage for input voltage.</th>
+                                </tr>
+                            </table>
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Other Development Boards:</h4>
+                    </button>
+                    <div class="content">
+                        <h5>Raspberry Pi, PIC Development Board, AVR Development Board, MSP430 Launchpad, Intel Edison, ESP32
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Difference between Arduino UNO and Arduino Nano:</h4>
+                </button>
+                    <div class="content">
+                        <h5>The Arduino Nano is very much similar to the Arduino UNO. They use the same Processor (Atmega328p) and hence they both can share the same program. One big difference between both is the size UNO is twice as big as Nano and hence
+                            occupies more space on your project.<br>Also Nano is breadboard friendly while Uno is not. To program a Uno you need Regular USB cable where as for Nano you will need a mini USB cable. The technical difference between Uno and
+                            Nano is shown below.
+                            <table border="1" class="collapsible_image">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Processor</th>
+                                    <th>Operating/Input Voltage</th>
+                                    <th>CPU speed</th>
+                                    <th>Analog In/Out</th>
+                                    <th>Digital IO/PWM</th>
+                                    <th>EEPROM / SRAM[kB]</th>
+                                    <th>Flash</th>
+                                    <th>USB</th>
+                                    <th>USART</th>
+                                </tr>
+                                <tr>
+                                    <th>Uno</th>
+                                    <th>ATmega328P</th>
+                                    <th>5V / 7-12V</th>
+                                    <th>16 MHz</th>
+                                    <th>6 / 0</th>
+                                    <th>14 / 6</th>
+                                    <th>1 / 2</th>
+                                    <th>32</th>
+                                    <th>Regular</th>
+                                    <th>1</th>
+                                </tr>
+                                <tr>
+                                    <th>Nano</th>
+                                    <th>ATmega328P</th>
+                                    <th>5V / 7-12V</th>
+                                    <th>16 MHz</th>
+                                    <th>8 / 0</th>
+                                    <th>14 / 6</th>
+                                    <th>1 / 2</th>
+                                    <th>32</th>
+                                    <th>Mini</th>
+                                    <th>1</th>
+                                </tr>
+                            </table>
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Difference between Arduino Nano and Arduino Mega:</h4>
+                </button>
+                    <div class="content">
+                        <h5>There is a considerable amount of difference between the Arduino Nano and the Arduino mega as the processor used itself is different. Arduino Mega is more powerful than an Arduino Nano in terms of speed and number of I/O pins.
+                            As you might guess the size is also bigger than an Arduino UNO. Arduino Mega is normally used for projects which require a lot of I/O pins and different Communication protocols. The technical difference between Nano and Mega
+                            is shown below.
+                            <table border="1" class="collapsible_image">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Processor</th>
+                                    <th>Operating/Input Voltage</th>
+                                    <th>CPU speed</th>
+                                    <th>Analog In/Out</th>
+                                    <th>Digital IO/PWM</th>
+                                    <th>EEPROM / SRAM[kB]</th>
+                                    <th>Flash</th>
+                                    <th>USB</th>
+                                    <th>USART</th>
+                                </tr>
+                                <tr>
+                                    <th>Mega</th>
+                                    <th>ATmega2560</th>
+                                    <th>5V / 7-12V</th>
+                                    <th>16 MHz</th>
+                                    <th>16 / 0</th>
+                                    <th>54 / 15</th>
+                                    <th>4 / 8</th>
+                                    <th>256</th>
+                                    <th>Regular</th>
+                                    <th>4</th>
+                                </tr>
+                                <tr>
+                                    <th>Nano</th>
+                                    <th>ATmega328P</th>
+                                    <th>5V / 7-12V</th>
+                                    <th>16 MHz</th>
+                                    <th>8 / 0</th>
+                                    <th>14 / 6</th>
+                                    <th>1 / 2</th>
+                                    <th>32</th>
+                                    <th>Mini</th>
+                                    <th>1</th>
+                                </tr>
+                            </table>
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Understanding Arduino Nano:</h4>
+                </button>
+                    <div class="content">
+                        <h5>The Arduino board is designed in such a way that it is very easy for beginners to get started with microcontrollers. This board especially is breadboard friendly is very easy to handle the connections. Let’s start with powering
+                            the Board.<br><br> Powering you Arduino Nano:-<br> There are totally three ways by which you can power your Nano.<br><br> USB Jack:-<br> Connect the mini USB jack to a phone charger or computer through a cable and it will draw
+                            power required for the board to function.<br><br> Vin Pin:-<br> The Vin pin can be supplied with a unregulated 6-12V to power the board. The on-board voltage regulator regulates it to +5V.<br><br> +5V Pin:-<br> If you have
+                            a regulated +5V supply then you can directly provide this o the +5V pin of the Arduino.<br><br> Input/output:-
+                            <br> There are totally 14 digital Pins and 8 Analog pins on your Nano board. The digital pins can be used to interface sensors by using them as input pins or drive loads by using them as output pins. A simple function like
+                            pinMode() and digitalWrite() can be used to control their operation. The operating voltage is 0V and 5V for digital pins.<br>The analog pins can measure analog voltage from 0V to 5V using any of the 8 Analog pins using a simple
+                            function liken analogRead().<br> These pins apart from serving their purpose can also be used for special purposes which are discussed below:-<br> -Serial Pins 0 (Rx) and 1 (Tx):<br> Rx and Tx pins are used to receive and transmit
+                            TTL serial data. They are connected with the corresponding ATmega328P USB to TTL serial chip.<br> -External Interrupt Pins 2 and 3:<br> These pins can be configured to trigger an interrupt on a low value, a rising or falling
+                            edge, or a change in value.<br> -PWM Pins 3, 5, 6, 9 and 11:<br> These pins provide an 8-bit PWM output by using analogWrite() function.<br> -SPI Pins 10 (SS), 11 (MOSI), 12 (MISO) and 13 (SCK):<br> These pins are used for
+                            SPI communication.<br> -In-built LED Pin 13:<br> This pin is connected with an built-in LED, when pin 13 is HIGH – LED is on and when pin 13 is LOW, its off.<br> -I2C A4 (SDA) and A5 (SCA):<br> Used for IIC communication using
+                            Wire library.<br> -AREF:
+                            <br> Used to provide reference voltage for analog inputs with analogReference() function.<br><br> Reset Pin:-<br> Making this pin LOW, resets the microcontroller.
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>How to use Arduino Nano:</h4>
+                </button>
+                    <div class="content">
+                        <h5>It will hardly take 5-10 minutes to upload you first program to Arduino Nano. All you need the Arduino IDE an USB cable and your Nano board itself.<br><br> Download and Install Arduino:_<br> The first step would be install the
+                            Arduino IDE which is available for download for free from the below link. After installing Arduino you might also want to install the drivers (link given below) for you Arduino to communicate with your Computer<br> 1.Arduino
+                            IDE Download<br> 2.Driver Download
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Uploading your first program:</h4>
+                </button>
+                    <div class="content">
+                        <h5>Once arduino IDE is installed on the computer, connect the board with computer using USB cable. Now open the arduino IDE and choose the correct board by selecting Tools>Boards>Arduino/Nano, and choose the correct Port by selecting
+                            Tools>Port. Arduino Uno is programmed using Arduino programming language based on Wiring.<br>To get it started with Arduino Uno board and blink the built-in LED, load the example code by selecting Files>Examples>Basics>Blink.
+                            Once the example code (also shown below) is loaded into your IDE, click on the ‘upload’ button given on the top bar.<br>Once the upload is finished, you should see the Arduino’s built-in LED blinking. Below is the example code
+                            for blinking:<br><br> // the setup function runs once when you press reset or power the board<br> void setup() {<br> // initialize digital pin LED_BUILTIN as an output.<br> pinMode(LED_BUILTIN, OUTPUT);<br> }
+                            <br> // the loop function runs over and over again forever<br> void loop() {<br> digitalWrite(LED_BUILTIN, HIGH); // turn the LED on (HIGH is the voltage level)<br> delay(1000); // wait for a second<br> digitalWrite(LED_BUILTIN,
+                            LOW); // turn the LED off by making the voltage LOW<br> delay(1000); // wait for a second<br> }
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Technical Specifications:</h4>
+                </button>
+                    <div class="content">
+                        <h5>
+                            <table>
+                                <tr>
+                                    <th>Microcontroller</th>
+                                    <th>ATmega328P – 8 bit AVR family microcontroller</th>
+                                </tr>
+                                <tr>
+                                    <th>Operating Voltage</th>
+                                    <th>5V</th>
+                                </tr>
+                                <tr>
+                                    <th>Recommended Input Voltage for Vin pin</th>
+                                    <th>7-12V</th>
+                                </tr>
+                                <tr>
+                                    <th>Analog Input Pins</th>
+                                    <th>6 (A0 – A5)</th>
+                                </tr>
+                                <tr>
+                                    <th>Digital I/O Pins</th>
+                                    <th>14 (Out of which 6 provide PWM output)</th>
+                                </tr>
+                                <tr>
+                                    <th>DC Current on I/O Pins</th>
+                                    <th>40 mA</th>
+                                </tr>
+                                <tr>
+                                    <th>DC Current on 3.3V Pin</th>
+                                    <th>50 mA</th>
+                                </tr>
+                                <tr>
+                                    <th>Flash Memory</th>
+                                    <th>32 KB (2 KB is used for Bootloader)</th>
+                                </tr>
+                                <tr>
+                                    <th>SRAM</th>
+                                    <th>2 KB</th>
+                                </tr>
+                                <tr>
+                                    <th>EEPROM</th>
+                                    <th>1 KB</th>
+                                </tr>
+                                <tr>
+                                    <th>Frequency (Clock Speed)</th>
+                                    <th>16 MHz</th>
+                                </tr>
+                                <tr>
+                                    <th>Communication</th>
+                                    <th>IIC, SPI, USART</th>
+                                </tr>
+                            </table>
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Applications:</h4>
+                </button>
+                    <div class="content">
+                        <h5>Prototyping of Electronics Products and Systems<br> Multiple DIY Projects.<br> Easy to use for beginner level DIYers and makers.<br> Projects requiring Multiple I/O interfaces and communications.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item"><button class="effe" id="myBtn4"><img class="image" src="Tessel.jpeg"></button><br>Tessel
+            <div id="myModal4" class="modal">
+                <div class="modal-content">
+                    <span class="close4">&times;</span>
+                    <img src="tessel-pinout.jpg" class="collapsible_image" alt="image is here"><br>
+                    <button class="collapsible">
+                    <h4>Descriptions:</h4>
+                </button>
+                    <div class="content">
+                        <h5>The Tessel 2 is an open source development board. It runs JavaScript and supports npm, which means scripts to control it can be built with Node.js. It's a platform for experimenting, tinkering, prototyping and producing embedded
+                            hardware, perfect for the Internet of Things (IoT).
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Specifications:</h4>
+                </button>
+                    <div class="content">
+                        <h5>• A 580MHz WiFi router system on chip (Mediatek MT7620n) running linux (OpenWRT)<br> • 64 MB of DDR2 RAM<br> • 32 MB of flash storage<br> • 2 High-speed USB 2.0 ports<br> • a micro USB port<br> • A 10/100 Ethernet port (RJ-45 jack)<br>                            • A 48MHz ARM Cortex M0 microcontroller (Atmel SAMD21)<br> • Two module ports that are much more capable than their predecessors<br> • a button and a bunch of LEDs, because what’s a Tessel without blinky?<br> • Router-grade
+                            802.11b/g/n WiFi, including access point mode (Tessel can be a router)<br> • 16 GPIO broken out as a pair of multi-purpose module ports<br> • Individual control over and protection for all outward-facing power buses (USB and
+                            module ports)<br> • A form factor designed for abstraction and flexibility in the hardware, software, and mechanical worlds as you scale from prototype to production
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Example Code:</h4>
+                </button>
+                    <div class="content">
+                        <h5>Wrote to /your/path/j5ik/package.json:<br> {
+                            <br> "name": "j5ik",<br> "version": "1.0.0",<br> "description": "",<br> "main": "index.js",<br> "scripts": {<br> "test": "echo \"Error: no test specified\" && exit 1"<br> },
+                            <br> "keywords": [],<br> "author": "",<br> "license": "ISC"<br> }
+                            <br> j5ik@1.0.0 /your/path/j5ik<br> ├── johnny-five<br> └── tessel-io<br> npm WARN j5ik@1.0.0 No description<br> npm WARN j5ik@1.0.0 No repository field.
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Abstraction Boundaries:</h4>
+                </button>
+                    <div class="content">
+                        <h5>One of the things which makes software so powerful is a heavy emphasis on frameworks and abstraction. Although there is no shortage of “standards” (official or otherwise) in the hardware space, one thing nobody has done particularly
+                            well yet is cleanly and clearly share abstraction boundaries between the hardware and software layers. We’re looking to change that.<br> The high-level system diagram for Tessel 2…and most other single-board computers, too.
+                            The diagram above is a high-level system diagram for Tessel 2. Let’s dive into where we drew the lines internally.<br> The board employs a processor/coprocessor architecture. The Mediatek runs your user code, hosts USB devices,
+                            handles the network connections (be they wired, wireless, or cellular over USB), and communicates with the SAMD21.<br> The SAM acts as a coprocessor and handles real-time, low-level IO through the module ports, USB comms through
+                            the Micro USB port, and programming the device as a whole.<br> The two chips are connected by a SPI bridge that also includes the onboard flash (the readme for Tessel 2’s firmware repo goes into more detail here).
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item"><button class="effe" id="myBtn5"><img class="image" src="cubieboard6.jpg"></button><br>Cubeiboard
+            <div id="myModal5" class="modal">
+                <div class="modal-content">
+                    <span class="close5">&times;</span>
+                    <img src="cubeiboard-pinout.jpg" class="collapsible_image" alt="image is here"><br>
+                    <button class="collapsible">
+                    <h4>Descriptions:</h4>
+                </button>
+                    <div class="content">
+                        <h5>Cubieboard is a single-board computer, made in Zhuhai, Guangdong, China. The first short run of prototype boards were sold internationally in September 2012, and the production version started to be sold in October 2012.<br>It
+                            can run Android 4 ICS, Ubuntu 12.04 desktop, Fedora 19 ARM Remix desktop, Armbian, Arch Linux ARM, a Debian-based Cubian distribution, or OpenBSD.<br> It uses the AllWinner A10 SoC, popular on cheap tablets, phones and media
+                            PCs. This SoC is used by developers of the lima driver, an open-source driver for the ARM Mali GPU. It was able, at the 2013 FOSDEM demo, to run ioquake 3 at 47 fps in 1024×600.<br> The Cubieboard team managed to run an Apache
+                            Hadoop computer cluster using the Lubuntu Linux distribution.
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Technical Specifications:</h4>
+                </button>
+                    <div class="content">
+                        <h5>Cubieboard1:-<br> The little motherboard utilizes the AllWinner A10 capabilities<br> 1.SoC: AllWinner A10<br> 2.CPU: Cortex-A8 @ 1 GHz CPU,<br> 3.GPU Mali-400 MP<br> 4.video acceleration: CedarX able to decode 2160p video<br> 5.display
+                            controller: unknown, supports HDMI 1080p<br> 6.512 MiB (beta) or 1GiB (final) DDR3<br> 7.4 GB NAND flash built-in, 1x microSD slot, 1x SATA port.<br> 8.10/100 Ethernet connector<br> 9.2x USB Host, 1x USB OTG, 1x CIR.<br> 10.96
+                            extend pin including I²C, SPI, LVDS<br> 11.Dimensions: 10 cm × 6 cm<br><br> Cubieboard2:-
+                            <br> The second version, sold since June 2013, enhances the board mainly by replacing the Allwinner A10 SoC with an Allwinner A20 which contains 2 ARM Cortex-A7 MPCore CPUs and a dual fragment shader Mali-400 GPU (Mali-400MP2).<br>                            This board is used by Fedora to test and develop the Allwinner SoC port of the distribution.<br> There is also a version available with two microSD card slots.<br><br> Cubietruck (Cubieboard3):-<br> The third version has a
+                            new and larger PCB layout and features the following hardware:<br> 1.SoC: Allwinner A20<br> 2.CPU: ARM Cortex-A7 @ 1 GHz dual-core<br> 3.GPU: Mali-400 MP2<br> 4.display controller: unknown, supports HDMI 1080p, no LVDS support<br>                            5.2 GiB DDR3 @ 480 MHz<br> 6.8 GB NAND flash built-in, 1x microSD slot, 1x SATA 2.0 port (Hard Disk of 2,5").<br> 7.10/100/1000 RTL8211E Gigabit Ethernet<br> 8.2x USB Host, 1x USB OTG, 1x CIR.<br> 9.S/PDIF, headphone, VGA and
+                            HDMI audio out, mic and line-in via extended pins<br> 9.Wi-Fi and Bluetooth on board with PCB antenna (Broadcom BCM4329/BCM40181)<br> 10.54 extended pins including I²C, SPI<br> 11.Dimensions: 11 cm × 8 cm<br> There is no LVDS
+                            support any longer. The RTL8211E NIC allows transfer rates up to 630–638 Mbit/s (sending while 5–10% idle) and 850–860 Mbit/s (receiving while 0–2% idle) when simultaneous TCP connections are established (testing was done utilising
+                            iperf with three clients against Cubietruck running Lubuntu)<br> To connect a 3.5" HDD the necessary 12 V power can be delivered by a 3.5 inch HDD addon package which can be used to power the Cubietruck itself as well. Also
+                            new is the option to power the Cubietruck from LiPo batteries.<br><br> Cubieboard 4:-<br> On May 4, 2014 CubieTech announced the Cubieboard 4, the board is also known as CC-A80. It is based on an Allwinner A80 SoC (quad Cortex-A15,
+                            quad Cortex-A7 big.LITTLE), thereby replacing the Mali GPU with a PowerVR GPU. The board was officially released on 10 March 2015.<br> 1.SoC: Allwinner A80<br> 2.CPU: 4x Cortex-A15 and 4x Cortex-A7 implementing ARM big.LITTLE<br>                            3.GPU: PowerVR G6230 (Rogue)<br> 4.video acceleration: A new generation of display engine that supports H.265, 4K resolution codec and 3-screen<br> 5.simultaneous output<br> 6.display controller: unknown, supports:<br> 7.microUSB
+                            3.0 OTG<br><br> Cubietruck Plus (Cubieboard 5):-<br> The fifth version has the same PCB layout and almost the same features as the CubieTruck.<br> 1.SoC: Allwinner H8<br> 2.CPU: ARM Cortex-A7 @ 2 GHz octa-core<br> 3.GPU: PowerVR
+                            SGX544 @ 700 MHz<br> 4.display controller: Toshiba TC358777XBG, supports HDMI 1.4 1080p and DisplayPort, no LVDS support<br> 5.2 GiB DDR3<br> 6.8 GB EMMC flash built-in, 1x microSD slot, 1x SATA 2.0 port (Hard Disk of 2,5")
+                            via USB bridge.<br> 7.10/100/1000M RJ45 Gigabit Ethernet<br> 8.2x USB Host, 1x USB OTG, 1x CIR.<br> 9.S/PDIF, headphone, and HDMI audio out, mic and line-in via 3.5mm jack, and onboard mic.<br> 10.Wi-Fi (dual-radio 2.4 and
+                            5 GHz) and Bluetooth on board with PCB antenna<br> 11.70 extended pins including I²C, SPI<br> 12.Dimensions: 11 cm × 8 cm<br>
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Applications:</h4>
+                </button>
+                    <div class="content">
+                        <h5>Cubieboard is meant to customize and replace the default OS with whatever you need for your use the board. It is an open platform for you to meld into your liking. All Linux distributions which support ARM can run on the cubieboard.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item"><button class="effe" id="myBtn6"><img class="image" src="Particle-Photon.jpg"></button><br>Particle-Photon
+            <div id="myModal6" class="modal">
+                <div class="modal-content">
+                    <span class="close6">&times;</span>
+                    <img src="particle.jpg" class="collapsible_image" alt="image is here"><br>
+                    <button class="collapsible">
+                    <h4>Descriptions:</h4>
+                </button>
+                    <div class="content">
+                        <h5>Particle Photon is a small IoT device with Wi-Fi built-in that can be used to build IoT projects. Particle Photon is part of the Particle ecosystem that offers an integrated environment to build and deploy IoT projects. Moreover,
+                            it supports cloud connectivity so that we can control Particle Photon from the cloud.
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Specifications:</h4>
+                </button>
+                    <div class="content">
+                        <h5>• On-board RGB status LED<br> • 18 Mixed-signal GPIO and advanced peripherals<br> • Open source design<br> • Real-time operating system (FreeRTOS)<br> • Soft AP setup<br> • FCC, CE and IC certified<br> • Broadcom BCM43362 Wi-Fi
+                            chip
+                            <br> • 802.11b/g/n Wi-Fi<br> • STM32F205RGY6 120Mhz ARM Cortex M3<br> • 1MB flash, 128KB RAM
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Example Code:</h4>
+                </button>
+                    <div class="content">
+                        <h5>// ------------ <br>// Blink an LED<br> // ------------<br> /*------------- We've heavily commented this code for you. If you're a pro, feel free to ignore it. Comments start with two slashes or are blocked off by a slash and a
+                            star. You can read them, but your device can't. It's like a secret message just for you. Every program based on Wiring (programming language used by Arduino, and Particle devices) has two essential parts: setup - runs once
+                            at the beginning of your program loop - runs continuously over and over You'll see how we use these in a second. This program will blink an led on and off every second. It blinks the D7 LED on your Particle device. If you have
+                            an LED wired to D0, it will blink that LED as well. -------------*/<br> // First, we're going to make some variables.<br> // This is our "shorthand" that we'll use throughout the program:<br> int led1 = D6;<br> // Instead of
+                            writing D0 over and over again, we'll write led1<br> // You'll need to wire an LED to this one to see it blink. <br>int led2 = D7; <br>// Instead of writing D7 over and over again, we'll write led2
+                            <br> // This one is the little blue LED on your board. On the Photon it is next to D7, and on the Core it is next to the USB jack.<br> // Having declared these variables, let's move on to the setup function.<br> // The setup
+                            function is a standard part of any microcontroller program. <br>// It runs only once when the device boots up or is reset.<br> void setup() {<br> // We are going to tell our device that D0 and D7 (which we named led1 and led2
+                            respectively) are going to be output<br> // (That means that we will be sending voltage to them, rather than monitoring voltage that comes from them)<br> // It's important you do this here, inside the setup() function rather
+                            than outside it or in the loop function. <br>pinMode(led1, OUTPUT);
+                            <br>pinMode(led2, OUTPUT);<br> } <br>// Next we have the loop function, the other essential part of a microcontroller program.<br> // This routine gets repeated over and over, as quickly as possible and as many times as possible,
+                            after the setup function is called.<br> // Note: Code that blocks for too long (like more than 5 seconds), can make weird things happen (like dropping the network connection). The built-in delay function shown below safely
+                            interleaves required background activity, so arbitrarily long delays can safely be done if you need them.<br> void loop()<br> {<br> // To blink the LED, first we'll turn it on...<br> digitalWrite(led1, HIGH);<br> digitalWrite(led2,
+                            HIGH);
+                            <br> // We'll leave it on for 1 second...<br> delay(1000);<br> // Then we'll turn it off... <br>digitalWrite(led1, LOW);<br> digitalWrite(led2, LOW);<br> // Wait 1 second...<br> delay(1000);<br> // And repeat!
+                            <br> }
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item"><button class="effe" id="myBtn7"><img class="image" src="odroid-c2.jpg"></button><br>Odroid-c2
+            <div id="myModal7" class="modal">
+                <div class="modal-content">
+                    <span class="close7">&times;</span>
+                    <img src="Odroid-c2-pinout.jpg" class="collapsible_image" alt="image is here"><br>
+                    <button class="collapsible">
+                    <h4>Descriptions:</h4>
+                </button>
+                    <div class="content">
+                        <h5>The ODROID-C2 is an ARM device – the most widely used architecture for mobile devices and embedded 64-bit computing. The ARM processor's small size, reduced complexity and low power consumption makes it very suitable for miniaturized
+                            devices such as wearables and embedded controllers.
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Specifications:</h4>
+                </button>
+                    <div class="content">
+                        <h5>Amlogic ARM® Cortex®-A53(ARMv8) 1.5Ghz quad core CPUs<br> * Mali™-450 GPU (3 Pixel-processors + 2 Vertex shader processors)<br> * 2Gbyte DDR3 SDRAM<br> * Gigabit Ethernet<br> * HDMI 2.0 4K/60Hz display<br> * H.265 4K/60FPS and
+                            H.264 4K/30FPS capable VPU<br> * 40pin GPIOs + 7pin I2S<br> * eMMC5.0 HS400 Flash Storage slot / UHS-1 SDR50 MicroSD Card slot<br> * USB 2.0 Host x 4, USB OTG x 1 (power + data capable)<br> * Infrared(IR) Receiver<br> * Ubuntu
+                            16.04 or Android 6.0 Marshmallow based on Kernel 3.14LTS<br> * We guarantee the production of C2 to the end of 2020.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item"><button class="effe" id="myBtn8"><img class="image" src="qualcommsnapdragon.jpg"></button><br>Qualcomm Snapdragon
+            <div id="myModal8" class="modal">
+                <div class="modal-content">
+                    <span class="close8">&times;</span>
+                    <img src="Qualcomm-pinout.jpeg" class="collapsible_image" alt="image is here"><br>
+                    <button class="collapsible">
+                    <h4>Descriptions:</h4>
+                </button>
+                    <div class="content">
+                        <h5>Snapdragon is a suite of system on a chip (SoC) semiconductor products for mobile devices designed and marketed by Qualcomm Technologies Inc. The Snapdragon central processing unit (CPU) uses the ARM RISC instruction set.
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Specifications:</h4>
+                </button>
+                    <div class="content">
+                        <h5>
+                            <p>
+                                • OS Support: Linux Kernel 3.4 (based on Yocto release: Jethro) <br> • CPU: Quad-core 2.15 GHz quad-core Kryo<br> • DSP: Dedicated Apps DSP (Hexagon 680) for real-time control<br> • Memory/storages: 4GB LPDDR4 RAM / 32GB
+                                UFS Flash<br> • Video: 4K@30fps video capture to SD card<br> • Camera Support:<br> o Optic Flow camera (installed)<br>  Omnivision OV7251 on Sunny Module GP161C module<br> o 4K High Res camera (installed)<br>  13 MP IMX214
+                                on KLT Module<br> • Connectivity and Location:<br> o BT 4.2 and 2G/5G WiFi via QCA6174A: 802.11a/b/g/n/ac, 2x2 MU-MIMO with 2 micro-coax <br> connectors on-board for connection to external antennae<br> • I/O Interfaces:<br>                                o One USB 3.0 OTG port (micro-A/B)<br> o Micro SD card slot<br> o Gimbal connector (PWB/GND/BLSP)<br> o ESC connector (2W UART)<br> • Form-Factor: PCB dimensions 75mm x 26mm<br> • Software:<br> o Linux (based on Yocto release:
+                                Jethro) running on the Quad-core CPU<br> o Open-embedded based build system<br> o Support for Qualcomm Navigator and Machine Vision (MV) SDK<br> • Flight Management Unit Functions:<br> o Sensor components directly on Qualcomm
+                                Flight Pro include:<br>  InvenSense MPU-9250 9-Axis Sensor, 3x3mm QFN<br>  Bosch BMP280 barometric pressure sensor<br> o I2C and UART interface for optional remote sensors<br> • Power<br> o 5VDC via external 2S-6S battery
+                                regulated down to 5V via power adapter
+                            </p>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item"><button class="effe" id="myBtn9"><img class="image" src="Raspberry-Pi.jpg"></button><br>Raspberry-Pi
+            <div id="myModal9" class="modal">
+                <div class="modal-content">
+                    <span class="close9">&times;</span>
+                    <img src="raspberry-pinout.jpg" class="collapsible_image" alt="image is here"><br>
+                    <button class="collapsible">
+                    <h4>Descriptions:</h4>
+                </button>
+                    <div class="content">
+                        <h5>The Raspberry Pi is a low cost, credit-card sized computer that plugs into a computer monitor or TV, and uses a standard keyboard and mouse. It is a capable little device that enables people of all ages to explore computing, and
+                            to learn how to program in languages like Scratch and Python.
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Specifications:</h4>
+                </button>
+                    <div class="content">
+                        <h5>• Broadcom BCM2711, Quad core Cortex-A72 (ARM v8) 64-bit SoC @ 1.5GHz<br> • 1GB, 2GB or 4GB LPDDR4-3200 SDRAM (depending on model)<br> • 2.4 GHz and 5.0 GHz IEEE 802.11ac wireless, Bluetooth 5.0, BLE<br> • Gigabit Ethernet<br>                            • 2 USB 3.0 ports; 2 USB 2.0 ports.<br> • Raspberry Pi standard 40 pin GPIO header (fully backwards compatible with previous boards)<br> • 2 × micro-HDMI ports (up to 4kp60 supported)<br> • 2-lane MIPI DSI display port<br>                            • 2-lane MIPI CSI camera port<br> • 4-pole stereo audio and composite video port<br> • H.265 (4kp60 decode), H264 (1080p60 decode, 1080p30 encode)<br> • OpenGL ES 3.0 graphics<br> • Micro-SD card slot for loading operating
+                            system and data storage<br> • 5V DC via USB-C connector (minimum 3A*)<br> • 5V DC via GPIO header (minimum 3A*)<br> • Power over Ethernet (PoE) enabled (requires separate PoE HAT)<br> • Operating temperature: 0 – 50 degrees
+                            C ambient
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Applications:</h4>
+                </button>
+                    <div class="content">
+                        <h5>The raspberry pi boards are used in many applications like Media streamer, Arcade machine, Tablet computer, Home automation, Carputer, Internet radio, Controlling robots, Cosmic Computer, Hunting for meteorites, Coffee and also
+                            in raspberry pi based projects.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item"><button class="effe" id="myBtn10"><img class="image" src="RedBoard.png"></button><br>RedBoard
+            <div id="myModal10" class="modal">
+                <div class="modal-content">
+                    <span class="close10">&times;</span>
+                    <img src="RedBoardPinout.png" class="collapsible_image" alt="image is here"><br>
+                    <button class="collapsible">
+                    <h4>Descriptions:</h4>
+                </button>
+                    <div class="content">
+                        <h5>The SparkFun RedBoard is an Arduino-compatible development platform that enables quick-and-easy project prototyping. It can interact with real-world sensors, control motors, display information, and perform near-instantaneous calculations.
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                                            <h4>Similarities and Difference with Uno:</h4>
+                                        </button>
+                    <div class="content">
+                        <h5>Key Differences:- <br> USB connector: Arduino Uno uses a USB type B connector, while the Redboard uses the smaller mini-B connector. Each connector requires a different USB cable. USB-to-Serial Transciever: The Arduino Uno uses
+                            an ATmega16U2 loaded with custom firmware to convert between USB and serial. The RedBoard uses the FTDI FT231X. This difference is only really prevalent when installing drivers because each requires a different driver file.
+                            SMD vs PTH: The Arduino Uno comes in two versions through-hole (PTH) or surface-mount (SMD). The RedBoard is only offered in SMD. The RedBoard takes this a step further, by making every component surface-mount. No sharp edges
+                            on the bottom of the board! Color: It won't have any real influence on the operation of the Arduino, but it certainly affects the board's swag-factor. Cool blue or Ferarri SparkFun red? Price: Because we manufacture the board
+                            in-house, here in Boulder, CO, we can afford to keep the price-tag a tad lower. Key Similarities:-<br> ATmega328: The main microprocessor on both boards is the popular ATmega328. This is they key-est of similarities. IDE interaction/Board
+                            Selection Type: The ATmega328 on both boards is loaded with the same bootloader (Optiboot). That means, when you program the board, you can still select Arduino Uno under the Tools > Board menu. Dimensions and Connector Layout:
+                            Both boards are the same size and shape, and the female header connectors are all placed in the same locations. All shields and enclosures will be compatible with both boards. Digital and Analog Pins: Each board has 14 digital
+                            I/Os and 6 analog I/Os. Operating Voltage: Both boards operate at 5V, and have an on-board 3.3V regulator. They can be powered either through USB or with a 7-15V barrel jack power supply.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item"><button class="effe" id="myBtn11"><img class="image" src="LilyPad.png"></button><br>LilyPad
+            <div id="myModal11" class="modal">
+                <div class="modal-content">
+                    <span class="close11">&times;</span>
+                    <img src="lillypad.jpg" class="collapsible_image" alt="image is here"><br>
+                    <button class="collapsible">
+                    <h4>Descriptions:</h4>
+                </button>
+                    <div class="content">
+                        <h5>LilyPad is a wearable e-textile technology developed by Leah Buechley and cooperatively designed by Leah and SparkFun. Each LilyPad was creatively designed to have large connecting pads to allow them to be sewn into clothing. Various
+                            input, output, power, and sensor boards are available. They're even washable!
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Specifications:</h4>
+                </button>
+                    <div class="content">
+                        <h5>he LilyPad Arduino is a microcontroller board designed for wearables and e-textiles. It can be sewn to fabric and similarly mounted power supplies, sensors and actuators with conductive thread.<br>The board is based on the ATmega168V
+                            (the low-power version of the ATmega168) (datasheet) or the ATmega328V (datasheet). The LilyPad Arduino was designed and developed by Leah Buechley and SparkFun Electronics.<br><br> Warning: Don't power the LilyPad Arduino
+                            with more than 5.5 volts, or plug the power in backwards: you'll kill it. Microcontroller or ATmega328V Operating Voltage Input Voltage Digital I/O Pins Analog Input Pins Flash Memory SRAM V 14 (of which 6 provide PWM output)
+                            16 KB (of which 2 KB used by bootloader) 1 KB.<br><br> The LilyPad Arduino can be programmed with the Arduino software (download). *Note*, the LilyPad Arduino should only be programmed with software versions 0010 or higher.<br>You
+                            can program it with earlier versions, but all of the time related functions will be off (twice as slow as they should be).<br>The ATmega328V on the Arduino LilyPad comes preburned with a bootloader that allows you to upload
+                            new code to it with the Arduino software.<br>You can also bypass the bootloader and program the ATmega through the ICSP (In-Circuit Serial Programming) header; see these instructions for details.<br><br> The LilyPad Arduino
+                            can be powered via the USB connection or with an external power supply. If an external power supply is used, it should provide between 2.7 and 5.5 volts.<br>This can come either from an AC-to-DC adapter (wall-wart) or battery.
+                            Again, don't power the LilyPad Arduino with more than 5.5 volts, or plug the power in backwards: you'll kill it.
+                            <br><br> The LilyPad Arduino is a circle, approximately (2") in diameter. The board itself is.8mm (1/32") thick (approximately 3mm (1/8") where electronics are attached).
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item"><button class="effe" id="myBtn12"><img class="image" src="Arduino-Leonardo.png"></button><br>Arduino-Leonardo
+            <div id="myModal12" class="modal">
+                <div class="modal-content">
+                    <span class="close12">&times;</span>
+                    <img src="leanardo-pinout.jpeg" class="collapsible_image" alt="image is here"><br>
+                    <button class="collapsible">
+                    <h4>Descriptions:</h4>
+                </button>
+                    <div class="content">
+                        <h5>The Arduino Leonardo is a microcontroller board based on the ATmega32U4. It has 23 digital input/output pins (of which 7 can be used as PWM outputs and 12 can be used as analog inputs), a 16 MHz crystal, a USB connection, a power
+                            jack, an in-circuit system programming (ICSP) header, and a reset button.
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Specifications:</h4>
+                </button>
+                    <div class="content">
+                        <h5>Microcontroller ----------ATmega32u4<br> Operating Voltage---------- 5V<br> Input Voltage (Recommended) ----------7-12V<br> Input Voltage (limits) ----------6-20V<br> Digital I/O Pins ----------20<br> PWM Channels ----------7<br>                            Analog Input Channels ----------12<br> DC Current per I/O Pin ----------40 mA<br> DC Current for 3.3V Pin ----------50 mA<br> Flash Memory ----------32 KB (ATmega32u4) of which 4 KB used by bootloader<br> SRAM ----------2.5
+                            KB (ATmega32u4)<br> EEPROM ----------1 KB (ATmega32u4)<br> Clock Speed ----------16 MHz<br> Lenght ----------68.6 mm<br> Width ----------53.3 mm<br> Weight ----------20 g<br>
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Applications:</h4>
+                </button>
+                    <div class="content">
+                        <h5>• Industrial Automation<br> • Health and Security Systems<br> • Creating wireless keyboard<br> • Automatic Pill Dispenser<br> • Embedded Systems<br> • Student Projects<br> • USB Trackpad<br> • Water Level Meter
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item"><button class="effe" id="myBtn13"><img class="image" src="Mediatek-Linkit.jpg"></button><br>Mediatek-Linkit
+            <div id="myModal13" class="modal">
+                <div class="modal-content">
+                    <span class="close13">&times;</span>
+                    <img src="LinkItONE-pinout.png" class="collapsible_image" alt="image is here"><br>
+                    <button class="collapsible">
+                    <h4>Descriptions:</h4>
+                </button>
+                    <div class="content">
+                        <h5>MediaTek LinkIt™ ONE development platform enables you to design and prototype Wearable and Internet of Things (IoT) devices, using hardware and an API that are similar to those offered for Arduino boards.
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Technical Specifications:</h4>
+                </button>
+                    <div class="content">
+                        <h5>Dimensions ----------108mm x75mm x33mm<br> Weight ----------G.W 102.5g<br> Battery ----------Lithium Cells/Batteries packed with equipment UN3481 -PI966<br> Microcontroller:-
+                            <br> Chipset ----------MT2502A (Aster)<br> Core ----------ARM7 EJ-S™<br> Clock Speed ----------260MHz<br> Dimensions ----------3.3 x 2.1 inches<br> Flash ----------16MB<br> RAM ----------4MB<br> Battery Jack ----------3.7~4.2V
+                            Li-battery
+                            <br> DC Current Per I/O Pin ----------0.3~3mA<br> Pin Count ----------16 (D0~D13, SDA, SCL)<br> Voltage ----------3.3v<br> Pin Count ----------3 (A0, A1, A2)<br> Voltage ----------0~5V<br> Pin Count ----------2 (D3 and D9)<br>                            Voltage ----------3.3v<br> Max Resolution ----------13bit<br> Frequency (Resolution) ----------1.6KHz (13bit) / 50.8KHz (8bit) / 800KHz (4bit)/ (customizable)<br> Pin Count ----------2 (D2 and D3)<br> Set Count ----------1
+                            (SDA, SCL)<br> Speed ----------100Kbps, 400Kbps, 3.4Mbps<br> Set Count ----------1 (MOSI, MISO, SCK, SS)<br> Speed ----------104Kbps~26Mbps<br> Set Count ----------1 (TX/RX)<br> Voltage ----------3.3v<br> Set Count ----------1
+                            <br> GSM ----------850/900/1800/1900MHz<br> GPRS Class ----------12<br> Bluetooth ----------BR/EDR/BLE (Dual Mode)<br> Wi-Fi (MT5931) ----------802.11 b/g/n<br> GPS (MT3332) ----------GPS/GLONASS/BEIDOU<br> Flash ----------10MB
+                            <br> SD Card Up to ----------32GB (Class 10)<br> RAM (Code+RO+RW+ZI+Heap) ----------2MB<br> Part List:-<br> LinkIt ----------One 1<br> ECCN/HTS:-
+                            <br> HSCODE ----------8517709000<br> USHSCODE ----------85177000<br> UPC ----------841454106326<br> FCC ----------1<br> CE ----------1
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item"><button class="effe" id="myBtn14"><img class="image" src="Udoo-Neo.png"></button><br>Udoo-Neo
+            <div id="myModal14" class="modal">
+                <div class="modal-content">
+                    <span class="close14">&times;</span>
+                    <img src="Udoo-Neo-pinout.png" class="collapsible_image" alt="image is here"><br>
+                    <button class="collapsible">
+                    <h4>Descriptions:</h4>
+                </button>
+                    <div class="content">
+                        <h5>UDOO is a development platform that merges a Dual or Quad Core ARM Freescale Cortex-A9 i.MX 6 CPU, that can run Linux or Android operating systems, and an Arduino Due compatible board with a dedicated ARM Atmel SAM3X8E CPU.
+                        </h5>
+                    </div>
+                    <button class="collapsible">
+                    <h4>Technical Specifications:</h4>
+                </button>
+                    <div class="content">
+                        <h5>• NXP® i.MX 6SoloX applications processor with an embedded ARM Cortex-A9 core and a Cortex-M4 Core<br> • 512MB (Basic) or 1GB (only Extended and Full)<br> • Integrated 2d/3d graphics controller<br> • Micro HDMI interface<br> •
+                            LVDS interface + touch (I2C signals)<br> • Analog camera connection supporting NTSC and PAL<br> • 8-bit parallel camera interface*<br> • HDMI audio transmitter<br> • S/PIDF & I2S*<br> • 1x USB 2.0 Type A ports<br> • 1x USB
+                            OTG (micro-AB connector)<br> • Fast ethernet RJ45 – 10/100Mbps (only Basic and Full)<br> • Wi-Fi 802.11 b/g/n,Direct Mode SmartConfig and Bluetooth 4.0 Low Energy (only Extended and Full)<br> • 3x UART ports*<br> • 2x CAN Bus
+                            interfaces*
+                            <br> • 8x PWM signals*<br> • 3x I2C interface*<br> • 1x SPI interface*<br> • 6x multiplexable signals*<br> • 5 V DC Micro USB<br> • 6-15 V DC Power Jack<br> • RTC Battery Connector<br> • Green Power Status LED<br> • User Configurable
+                            LEDs (Red and Orange)<br> • 3-Axis Accelerometer (only Extended and Full)<br> • 3-Axis Magnetometer (only Extended and Full)<br> • 3-Axis Digital Gyroscope (only Extended and Full)<br> • 1x Sensor Snap-In I2C connector (only
+                            Extended and Full)<br> • 89mm x59mm (3.50″ x 2.32″)<br> • Arduino-Compatible through the standard Arduino Pins layout and compatible with Arduino shields.<br> • 32 extended GPIOs (A9 dedicated)<br> • 22 Arduino GPIOs (M4 dedicated)<br>                            • 6 available Pins<br> • Android Lollipop & Linux UDOObuntu2 (14.04 LTS)
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div align="center">
+        <a href="https://www.facebook.com/swapnil.dutta.988"><img class="favicon1" src="facebook.png"></a>
+        <a href="https://www.instagram.com/__swapnil99/"><img class="favicon1" src="instagram.png"></a>
+        <a href="www.linkedin.com"><img class="favicon1" src="linkedin-logo.png"></a>
+        <a href="https://twitter.com/SwapnilDutta567"><img class="favicon1" src="twitter.png"></a>
+    </div>
+
+    <div id="id1">
+        <h1 id="id2"><em>Company Details</em></h1>
+        <h1 id="id2"><u>Contact:</u><br> 6372877656,7540866187</h1>
+        <h1 id="id2">Email1:<a href="mailto:s.sonupatra@gmail.com">s.sonupatra@gmail.com</a><br>Email2: <a href="mailto:duttaswapnil69@gmail.com">duttaswapnil69@gmail.com</a></h1>
+        <br>
+        <h1 id="id2"><em>Support</em></h1>
+        <h1 id="id2"><u>Address:</u> <br>Unit-9</Unit-9>,<br>Bhubaneswar,Odisha,India,751007</h1>
+        <h1 id="id2">Our helpline is open 24X7.</h1>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        var modal1 = document.getElementById("myModal1");
+        var btn1 = document.getElementById("myBtn1");
+        var span1 = document.getElementsByClassName("close1")[0];
+        span1.onclick = function() {
+            modal1.style.display = "none";
+        }
+        btn1.onclick = function() {
+            modal1.style.display = "block";
+        }
+        var modal2 = document.getElementById("myModal2");
+        var btn2 = document.getElementById("myBtn2");
+        var span2 = document.getElementsByClassName("close2")[0];
+        btn2.onclick = function() {
+            modal2.style.display = "block";
+        }
+        span2.onclick = function() {
+            modal2.style.display = "none";
+        }
+        var modal3 = document.getElementById("myModal3");
+        var btn3 = document.getElementById("myBtn3");
+        var span3 = document.getElementsByClassName("close3")[0];
+        btn3.onclick = function() {
+            modal3.style.display = "block";
+        }
+        span3.onclick = function() {
+            modal3.style.display = "none";
+        }
+        var modal4 = document.getElementById("myModal4");
+        var btn4 = document.getElementById("myBtn4");
+        var span4 = document.getElementsByClassName("close4")[0];
+        btn4.onclick = function() {
+            modal4.style.display = "block";
+        }
+        span4.onclick = function() {
+            modal4.style.display = "none";
+        }
+        var modal5 = document.getElementById("myModal5");
+        var btn5 = document.getElementById("myBtn5");
+        var span5 = document.getElementsByClassName("close5")[0];
+        btn5.onclick = function() {
+            modal5.style.display = "block";
+        }
+        span5.onclick = function() {
+            modal5.style.display = "none";
+        }
+        var modal6 = document.getElementById("myModal6");
+        var btn6 = document.getElementById("myBtn6");
+        var span6 = document.getElementsByClassName("close6")[0];
+        btn6.onclick = function() {
+            modal6.style.display = "block";
+        }
+        span6.onclick = function() {
+            modal6.style.display = "none";
+        }
+        var modal7 = document.getElementById("myModal7");
+        var btn7 = document.getElementById("myBtn7");
+        var span7 = document.getElementsByClassName("close7")[0];
+        btn7.onclick = function() {
+            modal7.style.display = "block";
+        }
+        span7.onclick = function() {
+            modal7.style.display = "none";
+        }
+        var modal8 = document.getElementById("myModal8");
+        var btn8 = document.getElementById("myBtn8");
+        var span8 = document.getElementsByClassName("close8")[0];
+        btn8.onclick = function() {
+            modal8.style.display = "block";
+        }
+        span8.onclick = function() {
+            modal8.style.display = "none";
+        }
+        var modal9 = document.getElementById("myModal9");
+        var btn9 = document.getElementById("myBtn9");
+        var span9 = document.getElementsByClassName("close9")[0];
+        btn9.onclick = function() {
+            modal9.style.display = "block";
+        }
+        span9.onclick = function() {
+            modal9.style.display = "none";
+        }
+        var modal10 = document.getElementById("myModal10");
+        var btn10 = document.getElementById("myBtn10");
+        var span10 = document.getElementsByClassName("close10")[0];
+        btn10.onclick = function() {
+            modal10.style.display = "block";
+        }
+        span10.onclick = function() {
+            modal10.style.display = "none";
+        }
+
+        var modal11 = document.getElementById("myModal11");
+        var btn11 = document.getElementById("myBtn11");
+        var span11 = document.getElementsByClassName("close11")[0];
+        span11.onclick = function() {
+            modal11.style.display = "none";
+        }
+        btn11.onclick = function() {
+            modal11.style.display = "block";
+        }
+        var modal12 = document.getElementById("myModal12");
+        var btn12 = document.getElementById("myBtn12");
+        var span12 = document.getElementsByClassName("close12")[0];
+        btn12.onclick = function() {
+            modal12.style.display = "block";
+        }
+        span12.onclick = function() {
+            modal12.style.display = "none";
+        }
+        var modal13 = document.getElementById("myModal13");
+        var btn13 = document.getElementById("myBtn13");
+        var span13 = document.getElementsByClassName("close13")[0];
+        btn13.onclick = function() {
+            modal13.style.display = "block";
+        }
+        span13.onclick = function() {
+            modal13.style.display = "none";
+        }
+        var modal14 = document.getElementById("myModal14");
+        var btn14 = document.getElementById("myBtn14");
+        var span14 = document.getElementsByClassName("close14")[0];
+        btn14.onclick = function() {
+            modal14.style.display = "block";
+        }
+        span14.onclick = function() {
+            modal14.style.display = "none";
+        }
+    </script>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

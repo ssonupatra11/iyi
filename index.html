@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is an Educational website based on iot,5g,machineLearning,artificial intelligence,iot modules">
+    <meta name="keywords" content="iot,ml,python,ai,iot modules,5g,machineLearning,artificial intelligence">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="S.Sonu Patra">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        body {
+            background-image: url("design1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(0, 0, 0);
+        }
+        
+        .topnav a {
+            background-color: black;
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .topnav a :hover {
+            color: #ffffff;
+            font-size: 20px;
+        }
+        
+        .topnav .icon {
+            display: none;
+        }
+        
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: rgb(0, 0, 0);
+            font-family: inherit;
+            margin: 0;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            float: none;
+            background-color: black;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .topnav a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(87, 65, 87);
+            color: white;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: rgb(87, 65, 87);
+            color: white;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child),
+            .dropdown .dropbtn {
+                display: none;
+            }
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            .topnav.responsive .dropdown {
+                float: none;
+            }
+            .topnav.responsive .dropdown-content {
+                position: relative;
+            }
+            .topnav.responsive .dropdown .dropbtn {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        
+        .slideshow-container {
+            height: 380px;
+            width: 90%;
+            position: relative;
+            margin: auto;
+            margin-top: 2%;
+        }
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 4vw;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.788);
+        }
+        
+        .text {
+            color: rgb(167, 255, 174);
+            font-size: 18px;
+            padding: 5px 8px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+        
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        #effect {
+            height: 30px;
+        }
+        
+        h1 {
+            font-size: 25px;
+            font-style: italic;
+            font-family: serif;
+            word-spacing: 10px;
+            letter-spacing: 2px;
+        }
+        
+        #header {
+            border-top: solid 10px white;
+            background-color: black;
+            width: 100%;
+            color: rgba(255, 255, 255, 0.815);
+            height: 180px;
+        }
+        
+        h5 {
+            border: 3px double white;
+            font-size: 17px;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 1% 2%;
+            background-color: rgb(111, 121, 116);
+            color: rgba(255, 255, 255, 0.836);
+        }
+        
+        .short {
+            height: 25px;
+            width: 25px;
+            margin-right: 12px;
+            margin-left: 10px;
+            background-color: white;
+        }
+        
+        .favicon1 {
+            height: 30px;
+            width: 30px;
+            margin: 3px 20px;
+        }
+        
+        #id1 {
+            color: white;
+            height: 200px;
+            background-color: black;
+            border-bottom: solid 10px white;
+        }
+        
+        #id2 {
+            text-align: center;
+            font-size: 14px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        #style {
+            padding: 10px;
+            text-align: center;
+            font-size: 15px;
+            height: 22px;
+            color: rgb(52, 82, 90);
+            background-color: #fafdffd8;
+        }
+        
+        #style1 {
+            font-style: italic;
+            font-family: serif;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.904);
+            text-decoration: underline;
+        }
+        
+        h4 {
+            padding: 1px 2%;
+            text-align: justify;
+            font-size: 14px;
+            color: rgb(255, 255, 255);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .h4_top1::first-letter {
+            font-size: 35px;
+            color: rgb(0, 0, 0);
+        }
+        
+        #h4_top {
+            padding: 1px 2%;
+            text-align: justify;
+            font-size: 14px;
+            color: rgb(255, 255, 255);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        h2 {
+            padding: 0px 10px;
+            color: #c8f1de;
+            font-size: 17px;
+        }
+        
+        h6 {
+            font-size: 14px;
+        }
+        /*collapsible*/
+        
+        .collapsible {
+            border-radius: 10px;
+            background-color: rgba(101, 155, 113, 0.733);
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            height: 26px;
+            line-height: 1px;
+            padding: 5px;
+            border: none;
+            text-align: center;
+            outline: none;
+            font-size: 20px;
+        }
+        
+        .active,
+        .collapsible:hover {
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        
+        .collapsible:after {
+            content: '\002B';
+            color: white;
+            float: right;
+            margin-left: 5px;
+        }
+        
+        .active:after {
+            content: "\2212";
+        }
+        
+        .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #352c2dcc;
+        }
+        
+        .img-border {
+            border-radius: 2%;
+            border: 3px solid white;
+            height: 150px;
+            width: 40%;
+        }
+        
+        .font {
+            font-size: 13px;
+        }
+        
+        @media only screen and (min-width:800px) {
+            .topnav a {
+                font-size: 26px;
+            }
+            .dropdown .dropbtn {
+                font-size: 26px;
+            }
+            .dropdown-content a {
+                float: none;
+                background-color: black;
+                color: white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            .slideshow-container {
+                width: 70%;
+            }
+            .prev,
+            .next {
+                font-size: 25px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            .short {
+                height: 30px;
+                width: 30px;
+            }
+            .favicon1 {
+                height: 40px;
+                width: 40px;
+                margin: 5px 40px;
+            }
+            #id1 {
+                height: 240px;
+            }
+            #id2 {
+                font-size: 17px;
+            }
+            #style {
+                font-size: 19px;
+            }
+            #style1 {
+                font-size: 18px;
+            }
+            h4 {
+                font-size: 17px;
+            }
+            #h4_top {
+                font-size: 17px;
+            }
+            /*collapsible*/
+            .collapsible {
+                height: 30px;
+                font-size: 30px;
+            }
+            .img-border {
+                height: 200px;
+            }
+            .font {
+                font-size: 12px;
+            }
+        }
+        
+        @media only screen and (min-width:1100px) {
+            .short {
+                height: 30px;
+                width: 30px;
+            }
+            .favicon1 {
+                margin: 5px 90px;
+            }
+            .collapsible {
+                height: 35px;
+            }
+            .font {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table id="header">
+            <tr>
+                <th>
+                    <h1>WELCOME TO IYI</h1>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h6>INNOVATE YOUR INTELLIGENCE<img src="idea.png" id="effect"></h6>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <div class="topnav" id="myTopnav">
+                        <a href="index.html">Home</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">Modules
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                            <div class="dropdown-content">
+                                <a href="commutools.html">
+                                    <div align="left" class="font"><img src="1 (12).png" class="short">COMMUNICATION TOOLS</div>
+                                </a>
+                                <a href="drone.html">
+                                    <div align="left" class="font"><img src="1 (5).png" class="short">DRONE COMPONENTS</div>
+                                </a>
+                                <a href="iot.html">
+                                    <div align="left" class="font"><img src="1 (2).png" class="short">IOT MODULES</div>
+                                </a>
+                                <a href="boards.html">
+                                    <div align="left" class="font"><img src="1 (1).png" class="short">MICROCONTROLLERS</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Books
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="python.html">
+                                    <div align="left" class="font"><img src="1 (11).png" class="short">PYTHON</div>
+                                </a>
+                                <a href="ml.html">
+                                    <div align="left" class="font"><img src="1 (3).png" class="short">ML</div>
+                                </a>
+                                <a href="firebase.html">
+                                    <div align="left" class="font"><img src="1 (9).png" class="short">FIREBASE</div>
+                                </a>
+                                <a href="iotbook.html">
+                                    <div align="left" class="font"><img src="1 (7).png" class="short">IOT</div>
+                                </a>
+                                <a href="drones.html">
+                                    <div align="left" class="font"><img src="1 (10).png" class="short">DRONE</div>
+                                </a>
+                                <a href="ai.html">
+                                    <div align="left" class="font"><img src="1 (8).png" class="short">AI</div>
+                                </a>
+                                <a href="5g.html">
+                                    <div align="left" class="font"><img src="1 (6).png" class="short">5G IOT</div>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="about.html">About</a>
+                        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                    </div>
+                </th>
+            </tr>
+        </table>
+        <br>
+        <div>
+            <h1 id="style">
+                Top Trending Technologies for 2019
+            </h1>
+            <br>
+            <h4 id="h4_top" class="h4_top1"> Technology is now evolving at such a rapid pace that annual predictions of trends can seem out-of-date before they even go live as a published blog post or article. As technology evolves, it enables even faster change and progress, causing
+                the acceleration of the rate of change, until eventually, it will become exponential.</h4>
+            <h4 id="h4_top"> Technology-based careers don’t change at that same speed, but they do evolve, and the savvy IT professional recognizes that his or her role will not stay the same. The IT worker of the 21st century will constantly be learning, out of necessity
+                if
+            </h4>
+            <h4 id="h4_top">
+                <font color="yellow"><i> What does this mean for you?</i></font> It means staying current with technology trends. And it means keeping your eyes on the future, to know which skills you’ll need to know.
+            </h4>
+            <h2>
+                Here are eight trending technologies you should watch for in 2019, and some of the jobs that will be created by these trends.
+            </h2>
+            <br>
+            <br>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="ari.jpg" style="width:100%" height="300px">
+                    <div class="text">Artificial Intelligence</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="ml.jpeg" style="width:100%" height="300px">
+                    <div class="text">Machine Learning</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="rpa.jpg" style="width:100%" height="300px">
+                    <div class="text">RPA</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="iot.png" style="width:100%" height="300px">
+                    <div class="text">IoT</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="blockchain.png" style="width:100%" height="300px">
+                    <div class="text">Blockchain</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="edgecomputing.png" style="width:100%" height="300px">
+                    <div class="text">Edge computing</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="arvr.jpg" style="width:100%" height="300px">
+                    <div class="text">VR & AR</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="cybersecurity.jpg" style="width:100%" height="300px">
+                    <div class="text">Cyber Security</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div><br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <button class="collapsible">
+        <h3 id="style1">
+            Artificial Intelligence
+        </h3>
+    </button>
+            <div class="content">
+                <h4> Artificial Intelligence, or AI, has already received a lot of buzz in recent years, but it continues to be a trend to watch because its effects on how we live, work and play are only in the early stages. In addition, other branches of
+                    AI have developed, including Machine Learning, which we will go into below. AI refers to computers systems built to mimic human intelligence and perform tasks such as recognition of images, speech or patterns, and decision making.
+                    AI can do these tasks faster and more accurately than humans.
+                </h4>
+                <br>
+                <h4> AI has been around since 1956 is already widely used. In fact, five out of six Americans use AI services in one form or another every day, including navigation apps, streaming services, smartphone personal assistants, ride-sharing apps,
+                    home personal assistants, and smart home devices. In addition to consumer use, AI is used to schedule trains, assess business risk, predict maintenance, and improve energy efficiency, among many other money-saving tasks.
+                </h4>
+                <br>
+                <h4> AI is one part of what we refer to broadly as automation, and automation is a hot topic because of potential job loss. Experts say automation will eliminate 73 million more jobs by 2030. However, automation is creating jobs as well as
+                    eliminating them, especially in the field of AI: Pundits predict that jobs in AI will number 23 million by 2020. Jobs will be created in development, programming, testing, support, and maintenance, to name a few. Artificial Intelligence
+                    architect is one such job. Some say it will soon rival data scientist in need for skilled professionals.
+                </h4>
+            </div>
+            <div align="center"><img src="ai.jpg" class="img-border"><img src="ai2.jpg" class="img-border"></div>
+
+            <button class="collapsible">
+    <h3 id="style1">
+        Machine Learning
+    </h3>
+</button>
+            <div class="content">
+                <h4> Machine Learning is a subset of AI. With Machine Learning, computers are programmed to learn to do something they are not programmed to do: They literally learn by discovering patterns and insights from data. In general, we have two types
+                    of learning, supervised and unsupervised.
+                </h4><br>
+                <h4> While Machine Learning is a subset of AI, we also have subsets within the domain of Machine Learning, including neural networks, natural language processing (NLP), and deep learning. Each of these subsets offers an opportunity for specializing
+                    in a career field that will only grow.
+                </h4><br>
+                <h4> Machine Learning is rapidly being deployed in all kinds of industries, creating a huge demand for skilled professionals. The Machine Learning market is expected to grow to $8.81 billion by 2022. Machine Learning applications are used for
+                    data analytics, data mining and pattern recognition. On the consumer end, Machine Learning powers web search results, real-time ads, and network intrusion detection, to name only a few of the many tasks it can do.
+                </h4><br>
+                <h4> In addition to completing countless tasks on our behalf, it is generating jobs. Machine Learning jobs rank among the top emerging jobs on LinkedIn, with almost 2,000 job listings posted. And these jobs pay well: In 2017, the median salary
+                    for a machine learning engineer was $106,225. Machine Learning jobs include engineers, developers, researchers, and data scientists.
+                </h4>
+            </div>
+            <div align="center"><img src="machineLearning.png" class="img-border"><img src="ml.jpg" class="img-border"></div>
+
+            <button class="collapsible">
+    <h3 id="style1">
+        Robotic Process Automation(RPA)
+    </h3>
+</button>
+            <div class="content">
+                <h4> Like AI and Machine Learning, Robotic Process Automation, or RPA, is another technology that is automating jobs. RPA is the use of software to automate business processes such as interpreting applications, processing transactions, dealing
+                    with data, and even replying to emails. RPA automates repetitive tasks that people used to do. These are not just the menial tasks of a low-paid worker: up to 45 percent of the activities we do can be automated, including the work
+                    of financial managers, doctors, and CEOs.
+                </h4><br>
+                <h4> Although Forrester Research estimates RPA automation will threaten the livelihood of 230 million or more knowledge workers or approximately 9 percent of the global workforce, RPA is also creating new jobs while altering existing jobs.
+                    McKinsey finds that less than 5 percent of occupations can be totally automated, but about 60 percent can be partially automated.
+                </h4><br>
+                <h4> For you as the IT professional looking to the future and trying to understand technology trends, RPA offers plenty of career opportunities, including developer, project manager, business analyst, solution architect, and consultant. And
+                    these jobs pay well. SimplyHired.com says the average RPA salary is $73,861, but that is the average compiled from salaries for junior-level developers up to senior solution architects, with the top 10 percent earning over $141,000
+                    annually.
+                </h4>
+            </div>
+            <div align="center"><img src="Figure3_robotics.png" class="img-border"><img src="RPA-IMPLEMENTATION_OPTIMISED.png" class="img-border"></div>
+
+            <button class="collapsible">
+    <h3 id="style1">
+        Blockchain
+    </h3>
+</button>
+            <div class="content">
+                <h4> Although most people think of blockchain technology in relation to cryptocurrencies such as Bitcoin, blockchain offers security that is useful in many other ways. In the simplest of terms, blockchain can be described as data you can only
+                    add to, not take away from or change. Hence the term “chain” because you’re making a chain of data. Not being able to change the previous blocks is what makes it so secure. In addition, blockchains are consensus-driven, as explained
+                    in this Forbes article, so no one entity can take control of the data. With blockchain, you don’t need a trusted third-party to oversee or validate transactions.
+                </h4><br>
+                <h4> This heightened security is why blockchain is used for cryptocurrency, and why it can play a significant role in protecting information such as personal medical data. Blockchain could be used to drastically improve the global supply chain,
+                    as described here, as well as protect assets such as art and real estate.
+                </h4><br>
+                <h4> And as the use of blockchain technology increases, so too does the demand for skilled professionals. In that regard, we are already behind. According to Techcrunch, blockchain-related jobs are the second-fastest growing category of jobs,
+                    with 14 job openings for every one blockchain developer. A blockchain developer specializes in developing and implementing architecture and solutions using blockchain technology. The average yearly salary of a blockchain developer
+                    is $130,000.
+                </h4>
+            </div>
+            <div align="center"><img src="transactioncycle.jpg" class="img-border"><img src="blockchain-graphic-g2.jpg" class="img-border"></div>
+
+            <button class="collapsible">
+    <h3 id="style1">
+        Edge Computing
+    </h3>
+</button>
+            <div class="content">
+                <h4> Formerly a technology trend to watch, cloud computing has become mainstream, with major players AWS (Amazon Web Services), Microsoft Azure and Google Cloud dominating the market. The adoption of cloud computing is still growing, as more
+                    and more businesses migrate to a cloud solution. But it’s no longer the emerging technology. Edge is. Move over, cloud computing, and make way for the edge.
+                </h4><br>
+                <h4> As the quantity of data we’re dealing with continues to increase, we’ve realized the shortcomings of cloud computing in some situations. Edge computing is designed to help solve some of those problems as a way to bypass the latency caused
+                    by cloud computing and getting data to a data center for processing. It can exist “on the edge,” if you will, closer to where computing needs to happen. For this reason, edge computing can be used to process time-sensitive data in
+                    remote locations with limited or no connectivity to a centralized location. In those situations, edge computing can act like mini datacenters. Edge computing will increase as use the Internet of Things (IoT) devices increases. By 2022,
+                    the global edge computing market is expected to reach $6.72 billion.
+                </h4>
+            </div>
+            <div align="center"><img src="Real-Life-Use.png" class="img-border"><img src="edgecomputing_cover2-1130x552.jpg" class="img-border"></div>
+
+            <button class="collapsible">
+    <h3 id="style1">
+        Virtual Reality(VR) and Augmented Reality(AR)
+    </h3>
+</button>
+            <div class="content">
+                <h4> Virtual Reality (VR) immerses the user in an environment while Augment Reality (AR) enhances their environment. Although VR has primarily been used for gaming thus far, it has also been used for training, as with VirtualShip, a simulation
+                    software used to train U.S. Navy, Army and Coast Guard ship captains. The popular Pokemon Go is an example of AR.
+                    <h4> Both have enormous potential in training, entertainment, education, marketing, and even rehabilitation after an injury. Either could be used to train doctors to do surgery, offer museum-goers a deeper experience, enhance theme parks,
+                        or
+                    </h4><br> even enhance marketing, as with this Pepsi Max bus shelter.
+                </h4><br>
+                <h4> According to an article at Monster.com, the demand for job candidates with VR knowledge is up 37 percent, but the potential employees are in short supply. That demand will only increase. There are major players in the VR market, like Google,
+                    Samsung, and Oculus, but plenty of startups are forming and they will be hiring—or trying to, in light of the shortage. Getting started in VR doesn’t require a lot of specialized knowledge. Basic programming skills and a forward-thinking
+                    mindset can land a job, although other employers will be looking for optics as a skill-set and hardware engineers as well.
+                </h4>
+            </div>
+            <div align="center"><img src="AR_Pokemon_1268x734.jpg" class="img-border"><img src="shutterstock_408578668_fKUzAy3.jpg" class="img-border"></div>
+
+            <button class="collapsible">
+    <h3 id="style1">
+        Cyber Security
+    </h3>
+</button>
+            <div class="content">
+                <h4> Cybersecurity might not seem like emerging technology, given that it has been around for a while, but it is evolving just as other technologies are. That’s in part because threats are constantly new. The malevolent hackers who are trying
+                    to illegally access data are not going to give up any time soon, and they will continue to find ways to get through even the toughest security measures. It’s also in part because new technology is being adapted to enhance security.
+                    Three of those advancements are hardware authentication, cloud technology, and deep learning, according to one expert. Another adds data loss prevention and behavioral analytics to the list. As long as we have hackers, we will have
+                    cybersecurity as an emerging technology because it will constantly evolve to defend against those hackers.
+                </h4><br>
+                <h4> As proof of the strong need for cybersecurity professionals, the number of cybersecurity jobs is growing three times faster than other tech jobs. However, we’re falling short when it comes to filling those jobs. As a result, it’s predicted
+                    that we will have 3.5 million unfilled cybersecurity jobs by 2021.
+                </h4><br>
+                <h4> Many cybersecurity jobs pay six-figure incomes, and roles can range from the ethical hacker to security engineer to Chief Security Officer, offering a promising career path for someone who wants to get into and stick with this domain.
+                </h4>
+            </div>
+            <div align="center"><img src="ss.jpeg" class="img-border"><img src="cybersecurity-image-1140x814.jpg" class="img-border"></div>
+
+            <button class="collapsible">
+    <h3 id="style1">
+        Internet of Things(IoT)
+    </h3>
+</button>
+            <div class="content">
+                <h4> Although it sounds like a game you’d play on your smartphone, the Internet of Things (IoT) is the future. Many “things” are now being built with WiFi connectivity, meaning they can be connected to the Internet—and to each other. Hence,
+                    the Internet of Things, or IoT. IoT enables devices, home appliances, cars and much more to be connected to and exchange data over the Internet. And we’re only in the beginning stages of IoT: The number of IoT devices reached 8.4 billion
+                    in 2017 is and expected to reach 30 billion devices by 2020.
+                </h4><br>
+                <h4> As consumers, we’re already using and benefitting from IoT. We can lock our doors remotely if we forget to when we leave for work and preheat our ovens on our way home from work, all while tracking our fitness on our Fitbits and hailing
+                    a ride with Lyft. But businesses also have much to gain now and in the near future.
+                </h4><br>
+                <h4>The IoT can enable better safety, efficiency, and decision making for businesses as data is collected and analyzed. It can enable predictive maintenance, speed up medical care, improve customer service, and offer benefits we haven’t even
+                    imagined yet.
+                </h4>
+            </div>
+            <div align="center"><img src="IoT.jpg" class="img-border"><img src="iot1.jpg" class="img-border"></div>
+
+
+            <button class="collapsible">
+    <h3 id="style1">
+        Questions Based On IoT
+    </h3>
+</button>
+            <div class="content">
+                <h4>Why is IoT needed?</h4>
+                <h5>IoT wants to connect all potential objects to interact each other on the internet to provide secure, comfort life for human. Internet of Things (IoT) makes our world as possible as connected together. ... Embedded computing devices would
+                    be exposed to internet influence.</h5>
+                <h4>Why is IoT technology?</h4>
+                <h5>The “Internet of Things” (IoT) may sound complex, but in actuality, is a fairly simple concept to understand. On a very high level, IoT is the ability for things that contain embedded technologies to sense, communicate, interact, and collaborate
+                    with other things, thus creating a network of physical objects.</h5>
+                <h4>What are advantages of IoT?</h4>
+                <h5>Useful In Monitoring – One of the most apparent advantages of IoT is monitoring. It provides an advantage of knowing things in advance. With this, the exact quantity of supplies, water distribution and consumption, intelligent energy management,
+                    and security distribution gets collected easily.</h5>
+                <h4>How is IoT useful?</h4>
+                <h5>The Internet of Things enables you to gather data from objects through sensors, and control them through actuators. ... However, the most popular use of IoT probably will be the Industrial IoT, as you can see IDC's IoT investment forecast.
+                </h5>
+                <h4>Why IoT is the future?</h4>
+                <h5>The Future of IoT. IoT devices are becoming a part of the mainstream electronics culture and people are adopting smart devices into their homes faster than ever. ... The more data that IoT devices collect, the smarter they will become.
+                    Cities will transform into smart cities through the use of IoT connected devices.</h5>
+                <h4>How can I learn IoT technology?</h4>
+                <h5>Here are six tips from IoT experts on how to break into a career developing connected devices. 1.Gain a deep understanding of sensors. ... 2.Focus on user interface. ... 3.Learn JavaScript or Python. ... 4.Play with a Raspberry Pi. ...
+                    5.Find a community. ... 6.Keep your skills cutting edge.</h5>
+                <h4>Is Alexa an example of IoT?</h4>
+                <h5>The internet is everywhere, thanks to the Internet of Things (IoT). ... Well-known examples of IoT devices include smart speakers like Amazon Alexa or Google Home, smartwatches like the Apple Watch, internet-connected baby monitors, video
+                    doorbells, and even toys.</h5>
+                <h4>Why do we need IoT platform?</h4>
+                <h5>An IoT platform is actually a suite of components that enables deployment of apps that monitor, control and manage the devices connected to a common server. The suite also allows the connected device to transmit and collect data from one
+                    another.
+                </h5>
+                <h4>Does IoT have future?</h4>
+                <h5>By 2025, it is estimated that there will be more than to 21 billion IoT devices. A quick look back shows where IoT devices are going. Consider: In 2016, there were more than 4.7 billion things connected to the internet, according to IOT
+                    Analytics. ... The market will increase to nearly 11.6 billion IoT devices.</h5>
+                <h4>Who is father of IoT?</h4>
+                <h5>Kevin Ashton Father of IoT, Kevin Ashton, says, 'if you think IoT is a buzzword, your business will fail'.</h5>
+                <h4>Does IoT require coding?</h4>
+                <h5>C++ is an alternative if the IoT device requires more complex tasks, think thermostats and smart toasters rather than devices that detect moisture or heat. ... JavaScript is another popular Web application language, but developers see
+                    Python as superior for IoT projects, due to its support for embedded programming.</h5>
+                <h4>Why IoT security is important?</h4>
+                <h5>While businesses cannot stop IoT attacks from happening, they can be proactive in mitigating threats to network security and protecting valuable data and IT systems. Emerging platforms like blockchain can help secure IoT devices by getting
+                    rid of a central authority in IoT networks.</h5>
+                <h4>Which IoT platform is best?</h4>
+                <h5>Top IoT Platforms 1.Microsoft Azure IoT. 2.Amazon Web Services or AWS. 3.Google Cloud Platform. 4.ThingWorx. 5.Cisco IoT Cloud Connect. 6.HP's Universal of Things. 7.SAP Cloud Platform. 8.Oracle Internet of Things.</h5>
+            </div>
+        </div>
+        <div align="center">
+            <a href="https://www.facebook.com/swapnil.dutta.988"><img class="favicon1" src="facebook.png"></a>
+            <a href="https://www.instagram.com/__swapnil99/"><img class="favicon1" src="instagram.png"></a>
+            <a href="www.linkedin.com"><img class="favicon1" src="linkedin-logo.png"></a>
+            <a href="https://twitter.com/SwapnilDutta567"><img class="favicon1" src="twitter.png"></a>
+        </div>
+        <div id="id1">
+            <h1 id="id2"><em>Company Details</em></h1>
+            <h1 id="id2"><u>Contact:</u><br> 6372877656,7540866187</h1>
+            <h1 id="id2">Email1:<a href="mailto:s.sonupatra@gmail.com">s.sonupatra@gmail.com</a><br>Email2: <a href="mailto:duttaswapnil69@gmail.com">duttaswapnil69@gmail.com</a></h1>
+            <br>
+            <h1 id="id2"><em>Support</em></h1>
+            <h1 id="id2"><u>Address:</u> <br>Unit-9</Unit-9>,<br>Bhubaneswar,Odisha,India,751007</h1>
+            <h1 id="id2">Our helpline is open 24X7.</h1>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+</body>
+
+</html>
